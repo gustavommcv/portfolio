@@ -1,8 +1,11 @@
-.theme-button {
+.language-button {
   background-color: transparent;
   border: none;
   font-size: var(--font-size-xlg);
+  color: var(--color-primary);
   cursor: pointer;
+  text-transform: uppercase;
+  transition: .3s all;
 
   &:hover {
     transform: scale(115%);

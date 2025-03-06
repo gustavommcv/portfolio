@@ -1,4 +1,5 @@
 import { useTheme } from "../../context/ThemeContextProvider";
+import "./ThemeButton.scss";
 
 export default function ThemeButton() {
   const { theme, toggleTheme } = useTheme();

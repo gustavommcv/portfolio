@@ -6,8 +6,6 @@ import { useTheme } from "../../context/ThemeContextProvider";
 const Layout: ParentComponent = (props) => {
   const { theme } = useTheme();
 
-  console.log(theme());
-
   return (
     <div class={`page-layout page-layout--${theme()}`}>
       <NavigationBar />
