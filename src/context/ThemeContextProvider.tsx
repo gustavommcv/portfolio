@@ -3,7 +3,7 @@ import Theme from "./ThemeType";
 import ThemeContext from "./ThemeContext";
 
 export const ThemeProvider: ParentComponent = (props) => {
-  const [theme, setTheme] = createSignal<Theme>("light");
+  const [theme, setTheme] = createSignal<Theme>("dark");
 
   const toggleTheme = () => {
     setTheme((prev) => (prev === "light" ? "dark" : "light"));

@@ -4,13 +4,14 @@ import ThemeButton from "../ThemeButton/ThemeButton";
 import LanguageButton from "../LanguageButton/LanguageButton";
 import { useLanguage } from "../../context/LanguageContextProvider";
 import { navigationBarTranslations } from "./navigationBarTranslations";
+import { useTheme } from "../../context/ThemeContextProvider";
 
 export default function NavigationBar() {
-  
   const { language } = useLanguage();
+  const { theme } = useTheme();
 
   return (
-    <nav class="navigation-bar">
+    <nav class={`navigation-bar navigation-bar--${theme()}`}>
       <div>
         <A
           activeClass="navigation-bar__link--active"

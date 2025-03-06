@@ -1,5 +1,6 @@
 .navigation-bar {
-  padding: 2rem 0;
+  padding: 2rem;
+  border-radius: var(--border-radius-lg);
   display: flex;
   justify-content: space-between;
 
@@ -8,10 +9,26 @@
     gap: var(--spacing-5);
   }
 
+  &--light {
+    // border: 1px solid #ddddff;
+    // background-color: #ebf1f5;
+
+    .navigation-bar__link {
+      color: var(--color-gray-900);
+    }
+  }
+
+  &--dark {
+    background-color: #1f2327;
+
+    .navigation-bar__link {
+      color: var(--color-gray-500);
+    }
+  }
+
   &__link {
     text-decoration: none;
     font-size: var(--font-size-xlg);
-    color: var(--color-gray-900);
     transition: var(--transition-duration) all var(--transition-timing-function);
 
     &--active {
