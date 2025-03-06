@@ -28,6 +28,11 @@
     & svg {
         width: 22px;
         height: auto;
+        transition: all .3s;
+
+        &:hover {
+            transform: scale(105%);
+        }
     }
   }
 }
