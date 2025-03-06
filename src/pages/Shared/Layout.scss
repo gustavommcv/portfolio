@@ -1,0 +1,14 @@
+.page-layout {
+  padding: 2rem 8rem;
+  height: 100%;
+  min-height: 50rem;
+  position: relative;
+}
+
+.page-layout--light {
+ background-color: var(--color-background-color-light);
+}
+
+.page-layout--dark {
+background-color: var(--color-background-color-dark);
+}

@@ -1,0 +1,29 @@
+.navigation-bar {
+  padding: 2rem 0;
+  display: flex;
+  justify-content: space-between;
+
+  & div {
+    display: flex;
+    gap: var(--spacing-5);
+  }
+
+  &__link {
+    text-decoration: none;
+    font-size: var(--font-size-xlg);
+    color: var(--color-gray-900);
+    transition: var(--transition-duration) all var(--transition-timing-function);
+
+    &--active {
+      color: var(--color-primary);
+      text-decoration: none;
+      font-size: var(--font-size-xlg);
+      pointer-events: none;
+    }
+
+    &:hover {
+      text-decoration: underline;
+      color: var(--color-primary);
+    }
+  }
+}
