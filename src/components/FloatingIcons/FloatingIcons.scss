@@ -1,0 +1,33 @@
+.floating-icons {
+  padding: 5rem 2rem;
+  border-radius: 2rem 0 0 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-6);
+
+  list-style: none;
+
+  position: fixed;
+  right: 0%;
+  top: 50%;
+  transform: translate(0, -50%);
+
+  &--light {
+    border: 1px solid #ddddff;
+    background-color: #ebf1f5;
+  }
+
+  &--dark {
+    background-color: #5db998;
+  }
+
+  &__link {
+
+    & svg {
+        width: 22px;
+        height: auto;
+    }
+  }
+}
