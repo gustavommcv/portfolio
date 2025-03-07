@@ -1,5 +1,4 @@
 @use "../../mixins.scss" as *;
-
 .navigation-bar {
   border-radius: var(--border-radius-lg);
   display: flex;
@@ -7,7 +6,7 @@
   width: 100%;
   padding: 2rem 8rem;
   position: sticky;
-  z-index: 10;
+  z-index: 100;
 
   &__container {
     width: 100%;
@@ -21,7 +20,8 @@
     & {
       flex-direction: column;
       align-items: center;
-      padding: 1rem;
+      padding: 2rem;
+      background-color: red;
     }
 
     &--light {
@@ -41,40 +41,50 @@
     gap: var(--spacing-5);
     width: 100%;
     justify-content: space-between;
-    
+
     &--light {
-      border: 1px solid #ddddff;
       background-color: #ebf1f5;
     }
 
     &--dark {
       background-color: #1f2327;
     }
-    
+
     @include respond-to("mobile") {
       & {
-        display: none;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
         width: 100%;
         padding: 1rem 0;
         gap: 1.5rem;
+        height: 0;
+        position: fixed;
+        transition: height 0.3s ease-in-out;
       }
 
       &.open {
         display: flex;
         gap: var(--spacing-6);
-        height: 100vh;
+        height: 100dvh;
+        border-radius: 0;
+        align-items: center;
+        justify-content: center;
       }
     }
   }
-  
-  &__links, &__settings {
+
+  &__links,
+  &__settings {
     display: flex;
     gap: var(--spacing-5);
+
+    @include respond-to("mobile") {
+      & {
+        opacity: 0;
+      }
+    }
   }
-  
+
   &__links {
     @include respond-to("mobile") {
       width: 100%;
@@ -127,10 +137,17 @@
     display: none;
     background: none;
     border: none;
+    position: relative;
     cursor: pointer;
+    padding: 1rem;
+    z-index: 10;
 
     @include respond-to("mobile") {
-      display: block;
+      display: flex;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      justify-content: center;
     }
 
     svg {
@@ -143,4 +160,13 @@
 
 .navigation-bar--dark .hamburger svg {
   stroke: var(--color-gray-500);
+}
+
+// Add this to make the links and settings visible when the menu is open
+.navigation-bar__menu.open {
+  .navigation-bar__links,
+  .navigation-bar__settings {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+  }
 }
