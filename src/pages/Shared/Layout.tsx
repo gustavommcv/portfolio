@@ -11,7 +11,9 @@ const Layout: ParentComponent = (props) => {
     <div class={`page-layout page-layout--${theme()}`}>
       <NavigationBar />
       <FloatingIcons />
-      {props.children}
+      <div class="page-layout__children">
+        {props.children}
+      </div>
     </div>
   );
 };

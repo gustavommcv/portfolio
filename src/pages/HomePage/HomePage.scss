@@ -7,7 +7,8 @@
   position: absolute;
   top: 50%;
   transform: translate(0, -50%);
-
+  padding: 2rem 8rem;
+  z-index: 1;
   
   @include respond-to("mobile") {
     & {
