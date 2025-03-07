@@ -1,11 +1,15 @@
+@use "../../mixins.scss" as *;
+
 .floating-icons {
   padding: 5rem 2rem;
-  border-radius: 2rem 0 0 2rem;
+  border-radius: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: var(--spacing-6);
+  margin-right: 2rem;
+  z-index: 9;
 
   list-style: none;
 
@@ -13,6 +17,18 @@
   right: 0%;
   top: 50%;
   transform: translate(0, -50%);
+
+  @include respond-to("tablet") {
+    & {
+      margin-right: 0;
+      flex-direction: row;
+      padding: 2rem 5rem;
+      transform: translate(50%, -100%);
+      border-radius: 2rem 2rem 0 0;
+      top: 100%;
+      right: 50%;
+    }
+  }
 
   &--light {
     border: 1px solid #ddddff;
@@ -24,15 +40,14 @@
   }
 
   &__link {
-
     & svg {
-        width: 22px;
-        height: auto;
-        transition: all .3s;
+      width: 22px;
+      height: auto;
+      transition: all 0.3s;
 
-        &:hover {
-            transform: scale(105%);
-        }
+      &:hover {
+        transform: scale(105%);
+      }
     }
   }
 }

@@ -1,5 +1,4 @@
 import { Route, Router } from "@solidjs/router";
-import "./App.css";
 import HomePage from "./pages/HomePage/HomePage";
 import { lazy } from "solid-js";
 import Layout from "./pages/Shared/Layout";

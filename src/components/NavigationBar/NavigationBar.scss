@@ -1,26 +1,87 @@
+@use "../../mixins.scss" as *;
+
 .navigation-bar {
-  padding: 2rem;
   border-radius: var(--border-radius-lg);
   display: flex;
   justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  z-index: 200;
+
+  @include respond-to("mobile") {
+    & {
+      flex-direction: column;
+
+      &--light {
+        border: 1px solid #ddddff;
+        background-color: #ebf1f5;
+      }
+
+      &--dark {
+        background-color: #1f2327;
+      }
+    }
+  }
 
   & div {
     display: flex;
+    border-radius: var(--border-radius-lg);
+    padding: 2rem 4rem;
     gap: var(--spacing-5);
+
+    &.settings {
+      transform: translate(-100%);
+    }
+
+    @include respond-to("mobile") {
+      & {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        padding: 1rem 0;
+
+        &.open {
+          display: flex;
+        }
+      }
+
+      &.links {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      &.settings {
+        margin-top: var(--spacing-4);
+        flex-direction: row;
+        justify-content: center;
+        transform: none;
+      }
+    }
+
+    &.light {
+      border: 1px solid #ddddff;
+      background-color: #ebf1f5;
+
+      @include respond-to("mobile") {
+        & {
+          background-color: transparent;
+          border: none;
+        }
+      }
+    }
+
+    &.dark {
+      background-color: #1f2327;
+    }
   }
 
   &--light {
-    // border: 1px solid #ddddff;
-    // background-color: #ebf1f5;
-
     .navigation-bar__link {
       color: var(--color-gray-900);
     }
   }
 
   &--dark {
-    background-color: #1f2327;
-
     .navigation-bar__link {
       color: var(--color-gray-500);
     }
@@ -43,4 +104,25 @@
       color: var(--color-primary);
     }
   }
+}
+
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+
+  @include respond-to("mobile") {
+    display: block;
+  }
+
+  svg {
+    width: 24px;
+    height: 24px;
+    stroke: currentColor;
+  }
+}
+.navigation-bar--dark .hamburger svg {
+  stroke: var(--color-gray-500); 
 }

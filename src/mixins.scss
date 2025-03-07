@@ -1,0 +1,29 @@
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == "xsmall-mobile" {
+    @media (max-width: 507px) {
+      @content;
+    }
+  } @else if $breakpoint == "small-mobile" {
+    @media (max-width: 683px) {
+      @content;
+    }
+  } @else if $breakpoint == "mobile" {
+    @media (max-width: 890px) {
+      @content;
+    }
+  } @else if $breakpoint == "tablet" {
+    @media (max-width: 975px) {
+      @content;
+    }
+  } @else if $breakpoint == "desktop" {
+    @media (max-width: 1199px) {
+      @content;
+    }
+  } @else if $breakpoint == "large-desktop" {
+    @media (min-width: 1200px) {
+      @content;
+    }
+  } @else {
+    @error "Breakpoint '#{$breakpoint}' not supported.";
+  }
+}
