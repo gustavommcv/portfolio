@@ -1,3 +1,5 @@
+import Project from "../../components/Project/Project";
+import projects from "../../components/Project/Projects";
 import { useLanguage } from "../../context/LanguageContextProvider";
 import { useTheme } from "../../context/ThemeContextProvider";
 import "./AboutPage.scss";
@@ -151,12 +153,33 @@ export default function AboutPage() {
         </div>
       </div>
 
-      <div class={`about-page__content about-page__content--${theme()}`}>
+      <div
+        class={`about-page__content about-page__content--2 about-page__content--${theme()}`}
+      >
         <h2 class={`about-page__title about-page__title--${theme()}`}>
           {language() === "en"
             ? "Some of my projects"
             : "Alguns de meus projetos"}
         </h2>
+        <p class="about-page__description">
+          {language() === "en"
+            ? "I love to create things, and I'm always working on something new! You can view some of my favorite projects below."
+            : "Eu amo criar coisas e estou sempre trabalhando em algo novo! Você pode ver alguns dos meus projetos favoritos abaixo."}
+        </p>
+        <div class="about-page__projects">
+          {projects.map((project) => (
+            <Project
+            link={project.link}
+              title={language() === "en" ? project.title.en : project.title.pt}
+              description={
+                language() === "en"
+                  ? project.shortDescription.en
+                  : project.shortDescription.pt
+              }
+              image={project.image}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );
