@@ -135,6 +135,7 @@
     overflow: hidden;
     max-width: 50rem;
     min-width: 40rem;
+    box-shadow: var(--shadow-md);
 
     & img {
       width: 100%;
