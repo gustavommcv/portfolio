@@ -51,6 +51,11 @@
   --transition-timing-function: ease-in-out;
 }
 
+.overflow-hidden {
+  overflow: hidden;
+  height: 100vh;
+}
+
 * {
   margin: 0;
   padding: 0;

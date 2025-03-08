@@ -1,11 +1,11 @@
-import { A } from "@solidjs/router";
-import "./NavigationBar.scss";
-import ThemeButton from "../ThemeButton/ThemeButton";
-import LanguageButton from "../LanguageButton/LanguageButton";
-import { useLanguage } from "../../context/LanguageContextProvider";
+import { createSignal, onCleanup, onMount } from "solid-js";
 import { navigationBarTranslations } from "./navigationBarTranslations";
+import LanguageButton from "../LanguageButton/LanguageButton";
+import ThemeButton from "../ThemeButton/ThemeButton";
+import { A } from "@solidjs/router";
+import { useLanguage } from "../../context/LanguageContextProvider";
 import { useTheme } from "../../context/ThemeContextProvider";
-import { createSignal } from "solid-js";
+import "./NavigationBar.scss";
 
 export default function NavigationBar() {
   const { language } = useLanguage();
@@ -13,8 +13,30 @@ export default function NavigationBar() {
   const [isMenuOpen, setIsMenuOpen] = createSignal(false);
 
   const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen());
+    const isOpen = !isMenuOpen();
+    setIsMenuOpen(isOpen);
+
+    if (isOpen) {
+      document.body.classList.add("overflow-hidden");
+    } else {
+      document.body.classList.remove("overflow-hidden");
+    }
   };
+
+  const handleResize = () => {
+    if (window.innerWidth > 890) {
+      setIsMenuOpen(false);
+      document.body.classList.remove("overflow-hidden");
+    }
+  };
+
+  onMount(() => {
+    window.addEventListener("resize", handleResize);
+  });
+
+  onCleanup(() => {
+    window.removeEventListener("resize", handleResize);
+  });
 
   return (
     <div class="navigation-bar__container">
@@ -63,16 +85,6 @@ export default function NavigationBar() {
                 ? navigationBarTranslations.en.about
                 : navigationBarTranslations.pt.about}
             </A>
-            {/* <A
-              activeClass="navigation-bar__link--active"
-              inactiveClass="navigation-bar__link"
-              href="/projects"
-              onClick={toggleMenu}
-            >
-              {language() === "en"
-                ? navigationBarTranslations.en.projects
-                : navigationBarTranslations.pt.projects}
-            </A> */}
           </div>
 
           <div class="navigation-bar__settings">
