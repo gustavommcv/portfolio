@@ -30,6 +30,10 @@
   &__welcome {
     font-size: var(--font-size-xlg);
 
+    @include respond-to("really-large-desktop") {
+      font-size: var(--font-size-xxlg);
+    }
+
     @include respond-to("mobile") {
       & {
         font-size: var(--font-size-xlg);
@@ -48,6 +52,10 @@
   &__title {
     font-size: var(--font-size-giganteporra);
     font-weight: var(--font-weight-normal);
+
+    @include respond-to("really-large-desktop") {
+      font-size: 8rem;
+    }
 
     @include respond-to("mobile") {
       & {
@@ -74,6 +82,10 @@
     display: flex;
     gap: var(--spacing-3);
     font-size: var(--font-size-xlg);
+
+    @include respond-to("really-large-desktop") {
+      font-size: 2.5rem;
+    }
 
     @include respond-to("mobile") {
       & {

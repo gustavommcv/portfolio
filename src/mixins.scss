@@ -23,6 +23,10 @@
     @media (min-width: 1200px) {
       @content;
     }
+  } @else if $breakpoint == "really-large-desktop" {
+    @media (min-width: 2000px) {
+      @content;
+    }
   } @else {
     @error "Breakpoint '#{$breakpoint}' not supported.";
   }

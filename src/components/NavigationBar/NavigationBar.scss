@@ -21,16 +21,6 @@
       flex-direction: column;
       align-items: center;
       padding: 2rem;
-      background-color: red;
-    }
-
-    &--light {
-      border: 1px solid #ddddff;
-      background-color: #ebf1f5;
-    }
-
-    &--dark {
-      background-color: #1f2327;
     }
   }
 
@@ -142,12 +132,30 @@
     padding: 1rem;
     z-index: 10;
 
+    &--light {
+      background-color: #ebf1f5;
+    }
+
+    &--dark {
+      background-color: #1f2327;
+    }
+
     @include respond-to("mobile") {
-      display: flex;
-      position: fixed;
-      top: 0;
-      width: 100%;
-      justify-content: center;
+      & {
+        display: flex;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        justify-content: center;
+      }
+
+      &--light {
+        border-bottom: 1px solid #1f232742;
+      }
+
+      &--dark {
+        border-bottom: 1px solid var(--color-primary);
+      }
     }
 
     svg {

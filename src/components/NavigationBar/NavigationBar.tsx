@@ -19,7 +19,7 @@ export default function NavigationBar() {
   return (
     <div class="navigation-bar__container">
       <nav class={`navigation-bar navigation-bar--${theme()}`}>
-        <button class="hamburger" onClick={toggleMenu}>
+        <button class={`hamburger hamburger--${theme()}`} onClick={toggleMenu}>
           <svg
             width="24"
             height="24"
@@ -63,7 +63,7 @@ export default function NavigationBar() {
                 ? navigationBarTranslations.en.about
                 : navigationBarTranslations.pt.about}
             </A>
-            <A
+            {/* <A
               activeClass="navigation-bar__link--active"
               inactiveClass="navigation-bar__link"
               href="/projects"
@@ -72,7 +72,7 @@ export default function NavigationBar() {
               {language() === "en"
                 ? navigationBarTranslations.en.projects
                 : navigationBarTranslations.pt.projects}
-            </A>
+            </A> */}
           </div>
 
           <div class="navigation-bar__settings">
