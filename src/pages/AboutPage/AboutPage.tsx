@@ -4,6 +4,7 @@ import { useLanguage } from "../../context/LanguageContextProvider";
 import { useTheme } from "../../context/ThemeContextProvider";
 import "./AboutPage.scss";
 import { aboutTranslations } from "./aboutTranslations";
+import doomImage from "../../assets/Imgs/Projects/doom.gif";
 
 export default function AboutPage() {
   const { language } = useLanguage();
@@ -169,7 +170,8 @@ export default function AboutPage() {
         <div class="about-page__projects">
           {projects.map((project) => (
             <Project
-            link={project.link}
+              customClass=""
+              link={project.link}
               title={language() === "en" ? project.title.en : project.title.pt}
               description={
                 language() === "en"
@@ -179,6 +181,13 @@ export default function AboutPage() {
               image={project.image}
             />
           ))}
+          <Project
+            customClass="doom"
+            title="See you in hell"
+            description=""
+            image={doomImage}
+            link="/jfkadskkcbnircnijsfffffffffffffff728h"
+          ></Project>
         </div>
       </div>
     </div>

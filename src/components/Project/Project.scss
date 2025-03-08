@@ -39,3 +39,18 @@
     font-size: 1.8rem;
   }
 }
+
+.doom {
+  opacity: 0;
+  transition: all .3s ;
+  background-image: url('/fire.gif');
+  background-size: cover; 
+  background-position: top right; 
+  background-repeat: no-repeat; 
+  height: .1rem;
+
+  &:hover {
+    opacity: 1;
+    height: 100%;
+  }
+}
