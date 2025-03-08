@@ -6,7 +6,7 @@ import DoomGame from "./components/DOOM/DoomGame";
 
 function App() {
   return (
-    <Router root={Layout}>
+    <Router root={Layout} base="/Portfolio">
       <Route path="/" component={HomePage}></Route>
       <Route
         path="/about"

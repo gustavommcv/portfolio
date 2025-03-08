@@ -186,7 +186,7 @@ export default function AboutPage() {
             title="See you in hell"
             description=""
             image={doomImage}
-            link="/jfkadskkcbnircnijsfffffffffffffff728h"
+            link="/Portfolio/jfkadskkcbnircnijsfffffffffffffff728h"
           ></Project>
         </div>
       </div>

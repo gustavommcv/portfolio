@@ -8,7 +8,7 @@
   border-radius: 2rem;
   overflow: hidden;
   color: #131518;
-  transition: transform .3s ease;
+  transition: transform 0.3s ease;
   cursor: pointer;
   box-shadow: var(--shadow-md);
   text-decoration: none;
@@ -42,15 +42,17 @@
 
 .doom {
   opacity: 0;
-  transition: all .3s ;
-  background-image: url('/fire.gif');
-  background-size: cover; 
-  background-position: top right; 
-  background-repeat: no-repeat; 
-  height: .1rem;
+  transition: all 0.3s;
+  background-image: url("/fire.gif");
+  background-size: cover;
+  background-position: top right;
+  background-repeat: no-repeat;
+  height: 0.1rem;
+  width: 0.5rem;
 
   &:hover {
     opacity: 1;
     height: 100%;
+    width: 100%;
   }
 }
