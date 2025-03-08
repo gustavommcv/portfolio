@@ -5,6 +5,7 @@ import { useTheme } from "../../context/ThemeContextProvider";
 import "./AboutPage.scss";
 import { aboutTranslations } from "./aboutTranslations";
 import doomImage from "../../assets/Imgs/Projects/doom.gif";
+import me from "../../assets/Imgs/me.jpg";
 
 export default function AboutPage() {
   const { language } = useLanguage();
@@ -150,7 +151,7 @@ export default function AboutPage() {
           </p>
         </div>
         <div class="about-page__image">
-          <img src="https://picsum.photos/500/600" alt="" />
+          <img src={me} alt="" />
         </div>
       </div>
 
