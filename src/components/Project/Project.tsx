@@ -1,3 +1,4 @@
+import { useTheme } from "../../context/ThemeContextProvider";
 import "./Project.scss";
 
 type ProjectProps = {
@@ -15,8 +16,14 @@ export default function Project({
   link,
   customClass,
 }: ProjectProps) {
+  const { theme } = useTheme();
+
   return (
-    <a target={customClass != "doom" ? "blank" : ""} href={link} class={`project ${customClass}`}>
+    <a
+      target={customClass != "doom" ? "blank" : ""}
+      href={link}
+      class={`project project--${theme()} ${customClass}`}
+    >
       <img src={image} alt="" class="project__image" />
       <div>
         <h2 class="project__title">{title}</h2>

@@ -1,5 +1,4 @@
 .project {
-  background-color: var(--color-primary-light);
   max-width: 50rem;
   height: 100%;
   width: 100%;
@@ -7,7 +6,6 @@
   text-align: center;
   border-radius: 2rem;
   overflow: hidden;
-  color: #131518;
   transition: transform 0.3s ease;
   cursor: pointer;
   box-shadow: var(--shadow-md);
@@ -15,6 +13,16 @@
 
   &:hover {
     transform: translateY(-2%);
+  }
+
+  &--light {
+    color: var(--color-gray-700);
+    background-color: rgba(128, 128, 128, 0.158);
+  }
+
+  &--dark {
+    color: #131518;
+    background-color: var(--color-primary-light);
   }
 
   &__image {
