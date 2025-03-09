@@ -38,7 +38,7 @@ const projects: Project[] = [
     },
     image: portifolioImage,
     technologies: ["Solid.js", "TypeScript", "SCSS"],
-    link: "https://sample.com",
+    link: "https://github.com/gustavommcv/Portfolio",
   },
   {
     title: {
