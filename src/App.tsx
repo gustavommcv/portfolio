@@ -1,4 +1,4 @@
-import { Route, Router } from "@solidjs/router";
+import { HashRouter, Route } from "@solidjs/router";
 import HomePage from "./pages/HomePage/HomePage";
 import { lazy } from "solid-js";
 import Layout from "./pages/Shared/Layout";
@@ -6,7 +6,7 @@ import DoomGame from "./components/DOOM/DoomGame";
 
 function App() {
   return (
-    <Router root={Layout} base="/Portfolio">
+    <HashRouter root={Layout}>
       <Route path="/" component={HomePage}></Route>
       <Route
         path="/about"
@@ -16,7 +16,7 @@ function App() {
         path="/jfkadskkcbnircnijsfffffffffffffff728h"
         component={DoomGame}
       ></Route>
-    </Router>
+    </HashRouter>
   );
 }
 
