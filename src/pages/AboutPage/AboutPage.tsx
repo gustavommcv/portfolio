@@ -163,7 +163,9 @@ export default function AboutPage() {
             ? "Some of my projects"
             : "Alguns de meus projetos"}
         </h2>
-        <p class={`about-page__description about-page__description--${theme()}`}>
+        <p
+          class={`about-page__description about-page__description--${theme()}`}
+        >
           {language() === "en"
             ? "I love to create things, and I'm always working on something new! You can view some of my favorite projects below."
             : "Eu amo criar coisas e estou sempre trabalhando em algo novo! Você pode ver alguns dos meus projetos favoritos abaixo."}
@@ -184,10 +186,10 @@ export default function AboutPage() {
           ))}
           <Project
             customClass="doom"
-            title="See you in hell"
+            title="Must kill them all!"
             description=""
             image={doomImage}
-            link="/Portfolio/jfkadskkcbnircnijsfffffffffffffff728h"
+            link="/jfkadskkcbnircnijsfffffffffffffff728h"
           ></Project>
         </div>
       </div>
