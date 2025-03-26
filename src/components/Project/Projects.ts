@@ -3,6 +3,7 @@ import airlockrestImage from "../../assets/Imgs/Projects/AirlockRest.png";
 import booksAppImage from "../../assets/Imgs/Projects/BooksApp.png";
 import tictactoeImage from "../../assets/Imgs/Projects/TicTacToe.png";
 import todoImage from "../../assets/Imgs/Projects/todo.png";
+import itauImage from "../../assets/Imgs/Projects/Itaú.jpg";
 
 type Project = {
   title: {
@@ -23,6 +24,23 @@ type Project = {
 };
 
 const projects: Project[] = [
+  {
+    title: {
+      en: "Itaú Unibanco - Challenge",
+      pt: "Itaú Unibanco - Desafio",
+    },
+    description: {
+      en: "REST API that receives Transactions and returns Statistics on those transactions. ",
+      pt: "API REST que recebe Transações e retorna Estatísticas sob essas transações. ",
+    },
+    shortDescription: {
+      en: "REST API that receives Transactions and returns Statistics on those transactions. ",
+      pt: "API REST que recebe Transações e retorna Estatísticas sob essas transações. ",
+    },
+    image: itauImage,
+    technologies: ["Java", "Spring", "JUnit"],
+    link: "https://github.com/gustavommcv/Desafio-API-Itau",
+  },
   {
     title: {
       en: "Portfolio",
