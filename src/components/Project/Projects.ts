@@ -4,6 +4,7 @@ import booksAppImage from "../../assets/Imgs/Projects/BooksApp.png";
 import tictactoeImage from "../../assets/Imgs/Projects/TicTacToe.png";
 import todoImage from "../../assets/Imgs/Projects/todo.png";
 import itauImage from "../../assets/Imgs/Projects/Itaú.jpg";
+import chMod from "../../assets/Imgs/Projects/chmodCalc.png";
 
 type Project = {
   title: {
@@ -43,23 +44,6 @@ const projects: Project[] = [
   },
   {
     title: {
-      en: "Portfolio",
-      pt: "Portfólio",
-    },
-    description: {
-      en: "My personal portfolio website built with Solid.js to showcase my projects and skills.",
-      pt: "Meu site de portfólio pessoal construído com Solid.js para exibir meus projetos e habilidades.",
-    },
-    shortDescription: {
-      en: "The page you are currently browsing",
-      pt: "A página em que está navegando neste momento",
-    },
-    image: portifolioImage,
-    technologies: ["Solid.js", "TypeScript", "SCSS"],
-    link: "https://github.com/gustavommcv/Portfolio",
-  },
-  {
-    title: {
       en: "BooksApp",
       pt: "BooksApp",
     },
@@ -96,6 +80,40 @@ const projects: Project[] = [
       "Clean Architecture",
     ],
     link: "https://github.com/gustavommcv/AirlockRest",
+  },
+  {
+    title: {
+      en: "Chmod Calculator",
+      pt: "Chmod Calculator",
+    },
+    description: {
+      en: "Simple chmod calculator using only js, html & css ",
+      pt: "Calculadora chmod simples usando apenas js, html & css",
+    },
+    shortDescription: {
+      en: "Simple chmod calculator using only js, html & css ",
+      pt: "Calculadora chmod simples usando apenas js, html & css",
+    },
+    image: chMod,
+    technologies: ["JS", "HTML", "CSS"],
+    link: "https://github.com/gustavommcv/chmod_calculator",
+  },
+  {
+    title: {
+      en: "Portfolio",
+      pt: "Portfólio",
+    },
+    description: {
+      en: "My personal portfolio website built with Solid.js to showcase my projects and skills.",
+      pt: "Meu site de portfólio pessoal construído com Solid.js para exibir meus projetos e habilidades.",
+    },
+    shortDescription: {
+      en: "The page you are currently browsing",
+      pt: "A página em que está navegando neste momento",
+    },
+    image: portifolioImage,
+    technologies: ["Solid.js", "TypeScript", "SCSS"],
+    link: "https://github.com/gustavommcv/Portfolio",
   },
   {
     title: {
