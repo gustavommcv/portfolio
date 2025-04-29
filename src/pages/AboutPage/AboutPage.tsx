@@ -55,7 +55,6 @@ export default function AboutPage() {
         <div class="about-page__projects">
           {projects.map((project) => (
             <Project
-              customClass=""
               link={project.link}
               title={language() === "en" ? project.title.en : project.title.pt}
               description={

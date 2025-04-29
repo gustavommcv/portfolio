@@ -6,7 +6,6 @@ type ProjectProps = {
   description: string;
   image: string;
   link: string | undefined;
-  customClass: string | undefined;
 };
 
 export default function Project({
@@ -14,16 +13,11 @@ export default function Project({
   description,
   image,
   link,
-  customClass,
 }: ProjectProps) {
   const { theme } = useTheme();
 
   return (
-    <a
-      target={customClass != "doom" ? "blank" : ""}
-      href={link}
-      class={`project project--${theme()} ${customClass}`}
-    >
+    <a target="blank" href={link} class={`project project--${theme()}`}>
       <img src={image} alt="" class="project__image" />
       <div>
         <h2 class="project__title">{title}</h2>

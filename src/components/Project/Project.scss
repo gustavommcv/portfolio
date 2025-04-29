@@ -70,25 +70,8 @@
     @include respond-to("mobile") {
       & {
         font-size: 1.5rem;
-        margin-top: .2rem;
+        margin-top: 0.2rem;
       }
     }
-  }
-}
-
-.doom {
-  opacity: 0;
-  transition: all 0.3s;
-  background-image: url("/fire.gif");
-  background-size: cover;
-  background-position: top right;
-  background-repeat: no-repeat;
-  height: 0.1rem;
-  width: 0.5rem;
-
-  &:hover {
-    opacity: 1;
-    height: 100%;
-    width: 100%;
   }
 }
