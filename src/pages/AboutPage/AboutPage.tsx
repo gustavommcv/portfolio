@@ -4,7 +4,6 @@ import { useLanguage } from "../../context/LanguageContextProvider";
 import { useTheme } from "../../context/ThemeContextProvider";
 import "./AboutPage.scss";
 import { aboutTranslations } from "./aboutTranslations";
-import doomImage from "../../assets/Imgs/Projects/doom.gif";
 import me from "../../assets/Imgs/me.jpg";
 
 export default function AboutPage() {
@@ -184,13 +183,6 @@ export default function AboutPage() {
               image={project.image}
             />
           ))}
-          <Project
-            customClass="doom"
-            title="Must kill them all!"
-            description=""
-            image={doomImage}
-            link="/jfkadskkcbnircnijsfffffffffffffff728h"
-          ></Project>
         </div>
       </div>
     </div>

@@ -5,6 +5,7 @@ import tictactoeImage from "../../assets/Imgs/Projects/TicTacToe.png";
 import todoImage from "../../assets/Imgs/Projects/todo.png";
 import itauImage from "../../assets/Imgs/Projects/Itaú.jpg";
 import chMod from "../../assets/Imgs/Projects/chmodCalc.png";
+import Desafio1XP from "../../assets/Imgs/Projects/DesafioBootcamp1-xp.png";
 
 type Project = {
   title: {
@@ -25,6 +26,23 @@ type Project = {
 };
 
 const projects: Project[] = [
+  {
+    title: {
+      en: "Bootcamp challenge - XP",
+      pt: "Desafio do bootcamp - XP",
+    },
+    description: {
+      en: "Challenge of the postgraduate bootcamp in software architecture and solutions (Api restful)",
+      pt: "Desafio do bootcamp da pós-graduação em arquitetura e soluções de software (Api restful)",
+    },
+    shortDescription: {
+      en: "Challenge of the postgraduate bootcamp in software architecture and solutions (Api restful)",
+      pt: "Desafio do bootcamp da pós-graduação em arquitetura e soluções de software (Api restful)",
+    },
+    image: Desafio1XP,
+    technologies: ["Docker", "Node.js", "Express", "MariaDB"],
+    link: "https://github.com/gustavommcv/Desafio-Bootcamp-Arquitetura-de-Software",
+  },
   {
     title: {
       en: "Itaú Unibanco - Challenge",
