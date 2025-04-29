@@ -1,5 +1,5 @@
 import Project from "../../components/Project/Project";
-import projects from "../../components/Project/Projects";
+import projects from "./Projects";
 import { useLanguage } from "../../context/LanguageContextProvider";
 import { useTheme } from "../../context/ThemeContextProvider";
 import "./AboutPage.scss";
