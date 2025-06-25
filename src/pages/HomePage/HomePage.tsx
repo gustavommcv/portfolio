@@ -99,13 +99,23 @@ export default function HomePage() {
             : homeTranslations.pt.download}
           :
         </p>
-        <div class="home-page__download-button">
+        <div
+          class={`home-page__download-button home-page__download-button--${theme()}`}
+        >
           {language() === "en" ? (
-            <a href="/portfolio/cv-en.docx" download="cv-en.docx">
+            <a
+              class={`home-page__download-link home-page__download-link--${theme()}`}
+              href="/portfolio/cv-en.docx"
+              download="cv-en.docx"
+            >
               Download
             </a>
           ) : (
-            <a href="/portfolio/cv-pt.docx" download="cv-pt.docx">
+            <a
+              class={`home-page__download-link home-page__download-link--${theme()}`}
+              href="/portfolio/cv-pt.docx"
+              download="cv-pt.docx"
+            >
               Baixar
             </a>
           )}
