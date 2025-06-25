@@ -32,6 +32,13 @@ export default function SkillsGrid() {
           />
         </a>
 
+        <a href="https://neovim.io/">
+          <img
+            alt="Neovim"
+            src="https://img.shields.io/badge/Neovim-57A143?logo=neovim&logoColor=white&style=for-the-badge"
+          />
+        </a>
+
         <a href="https://go.dev/">
           <img
             alt="GOlang"
