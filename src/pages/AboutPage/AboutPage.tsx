@@ -4,7 +4,7 @@ import { useLanguage } from "../../context/LanguageContextProvider";
 import { useTheme } from "../../context/ThemeContextProvider";
 import "./AboutPage.scss";
 import { aboutTranslations } from "./aboutTranslations";
-import me from "../../assets/Imgs/me.jpg";
+import me from "../../assets/Imgs/me.webp";
 import SkillsGrid from "../../components/SkillsGrid/SkillsGrid";
 
 export default function AboutPage() {

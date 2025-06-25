@@ -1,14 +1,14 @@
-import portifolioImage from "../../assets/Imgs/Projects/Portfolio.png";
-import airlockrestImage from "../../assets/Imgs/Projects/AirlockRest.png";
-import booksAppImage from "../../assets/Imgs/Projects/BooksApp.png";
-import tictactoeImage from "../../assets/Imgs/Projects/TicTacToe.png";
-import todoImage from "../../assets/Imgs/Projects/todo.png";
-import itauImage from "../../assets/Imgs/Projects/Itaú.jpg";
-import chMod from "../../assets/Imgs/Projects/chmodCalc.png";
-import Desafio1XP from "../../assets/Imgs/Projects/DesafioBootcamp1-xp.png";
-import SignoTech from "../../assets/Imgs/Projects/SignoTech.png";
-import MinimalNeovim from "../../assets/Imgs/Projects/MinimalNeovim.png";
-import Gomodoro from "../../assets/Imgs/Projects/gomodoro.png";
+import portifolioImage from "../../assets/Imgs/Projects/Portfolio.webp";
+import airlockrestImage from "../../assets/Imgs/Projects/AirlockRest.webp";
+import booksAppImage from "../../assets/Imgs/Projects/BooksApp.webp";
+import tictactoeImage from "../../assets/Imgs/Projects/TicTacToe.webp";
+import todoImage from "../../assets/Imgs/Projects/todo.webp";
+import itauImage from "../../assets/Imgs/Projects/Itaú.webp";
+import chMod from "../../assets/Imgs/Projects/chmodCalc.webp";
+import Desafio1XP from "../../assets/Imgs/Projects/DesafioBootcamp1-xp.webp";
+import SignoTech from "../../assets/Imgs/Projects/SignoTech.webp";
+import MinimalNeovim from "../../assets/Imgs/Projects/MinimalNeovim.webp";
+import Gomodoro from "../../assets/Imgs/Projects/gomodoro.webp";
 
 type Project = {
   title: {
