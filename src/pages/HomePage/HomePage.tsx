@@ -3,8 +3,6 @@ import "./HomePage.scss";
 import { useTheme } from "../../context/ThemeContextProvider";
 import { useLanguage } from "../../context/LanguageContextProvider";
 import { homeTranslations } from "./homeTranslations";
-import cvFileEn from "../../assets/cv-en.docx";
-import cvFilePt from "../../assets/cv-pt.docx";
 
 export default function HomePage() {
   const { theme } = useTheme();
@@ -103,11 +101,11 @@ export default function HomePage() {
         </p>
         <div class="home-page__download-button">
           {language() === "en" ? (
-            <a href={cvFileEn} download="cv-en.docx">
+            <a href="/portfolio/cv-en.docx" download="cv-en.docx">
               Download
             </a>
           ) : (
-            <a href={cvFilePt} download="cv-pt.docx">
+            <a href="/portfolio/cv-pt.docx" download="cv-pt.docx">
               Baixar
             </a>
           )}
