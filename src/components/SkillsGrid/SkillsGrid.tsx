@@ -11,10 +11,12 @@ export default function SkillsGrid() {
         Skills:
       </p>
       <p class={`about-page__paragraph about-page__paragraph--${theme()}`}>
-        <img
-          alt="Linux"
-          src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black"
-        />
+        <a href="https://archlinux.org/">
+          <img
+            alt="Linux"
+            src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black"
+          />
+        </a>
 
         <a href="https://www.docker.com/">
           <img
