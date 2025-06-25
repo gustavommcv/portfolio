@@ -3,6 +3,8 @@ import "./HomePage.scss";
 import { useTheme } from "../../context/ThemeContextProvider";
 import { useLanguage } from "../../context/LanguageContextProvider";
 import { homeTranslations } from "./homeTranslations";
+import cvFileEn from "../../assets/cv-en.docx";
+import cvFilePt from "../../assets/cv-pt.docx";
 
 export default function HomePage() {
   const { theme } = useTheme();
@@ -60,8 +62,10 @@ export default function HomePage() {
         >
           {language() === "en"
             ? homeTranslations.en.contact
-            : homeTranslations.pt.contact}:
+            : homeTranslations.pt.contact}
+          :
         </p>
+
         <div class={`code-snippet code-snippet--${theme()}`}>
           <p>{email}</p>
           <button class="code-snippet__copy-button" onClick={handleCopyEmail}>
@@ -87,6 +91,26 @@ export default function HomePage() {
               </svg>
             )}
           </button>
+        </div>
+
+        <p
+          class={`home-page__download-title home-page__download-title--${theme()}`}
+        >
+          {language() === "en"
+            ? homeTranslations.en.download
+            : homeTranslations.pt.download}
+          :
+        </p>
+        <div class="home-page__download-button">
+          {language() === "en" ? (
+            <a href={cvFileEn} download="cv-en.docx">
+              Download
+            </a>
+          ) : (
+            <a href={cvFilePt} download="cv-pt.docx">
+              Baixar
+            </a>
+          )}
         </div>
       </div>
     </div>

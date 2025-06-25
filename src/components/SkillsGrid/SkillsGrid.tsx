@@ -12,115 +12,119 @@ export default function SkillsGrid() {
       </p>
       <p class={`about-page__paragraph about-page__paragraph--${theme()}`}>
         <img
-          alt="C"
-          src="https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white"
+          alt="Linux"
+          src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black"
         />
-        <a href="https://dotnet.microsoft.com/">
+
+        <a href="https://www.docker.com/">
           <img
-            alt="C#"
-            src="https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white"
+            alt="Docker"
+            src="https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white&style=for-the-badge"
           />
         </a>
-        <a href="https://www.oracle.com/br/java/technologies/downloads/">
-          <img
-            alt="Java"
-            src="https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white"
-          />
-        </a>
-        <img
-          alt="JavaScript"
-          src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"
-        />
-        <a href="https://www.typescriptlang.org/">
-          <img
-            alt="Typescript"
-            src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white"
-          />
-        </a>
-        <img
-          alt="HTML"
-          src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"
-        />
-        <img
-          alt="CSS"
-          src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"
-        />
-        <a href="https://react.dev/">
-          <img
-            alt="React"
-            src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"
-          />
-        </a>
-        <a href="https://tailwindcss.com/">
-          <img
-            alt="Tailwind"
-            src="https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white"
-          />
-        </a>
-        <a href="https://www.mysql.com/">
-          <img
-            alt="MYSQL"
-            src="https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white"
-          />
-        </a>
-        <a href="https://mariadb.org/">
-          <img
-            alt="MARIADB"
-            src="https://img.shields.io/badge/MariaDB-003545?style=for-the-badge&logo=mariadb&logoColor=white"
-          />
-        </a>
-        <a href="https://dotnet.microsoft.com/">
-          <img
-            alt=".NET"
-            src="https://img.shields.io/badge/.NET-5C2D91?style=for-the-badge&logo=.net&logoColor=white"
-          />
-        </a>
-        <a href="https://pages.github.com/">
-          <img
-            alt="GitHub Pages"
-            src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"
-          />
-        </a>
+
         <a href="https://git-scm.com/">
           <img
             alt="Git"
             src="https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white"
           />
         </a>
-        <a href="https://www.postman.com/">
+
+        <a href="https://go.dev/">
           <img
-            alt="Postman"
-            src="https://img.shields.io/badge/Postman-FF6C37.svg?style=for-the-badge&logo=Postman&logoColor=white"
+            alt="GOlang"
+            src="https://img.shields.io/badge/Go-00ADD8?logo=Go&logoColor=white&style=for-the-badge"
           />
         </a>
-        <a href="https://code.visualstudio.com/">
+
+        <a href="https://www.lua.org/">
           <img
-            alt="Visual Studio Code"
-            src="https://img.shields.io/badge/Vscode-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white"
+            alt="Lua"
+            src="https://img.shields.io/badge/Lua-2C2D72?style=for-the-badge&logo=lua&logoColor=white"
           />
         </a>
-        <a href="https://nodejs.org/">
+
+        <a href="https://dotnet.microsoft.com/">
           <img
-            alt="Node.js"
-            src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white"
+            alt=".NET"
+            src="https://img.shields.io/badge/.NET-5C2D91?style=for-the-badge&logo=.net&logoColor=white"
           />
         </a>
+
+        <a href="https://www.java.com/pt-BR/">
+          <img
+            alt="Java"
+            src="https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white"
+          />
+        </a>
+
+        <a href="https://www.typescriptlang.org/">
+          <img
+            alt="Typescript"
+            src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white"
+          />
+        </a>
+
         <a href="https://expressjs.com/">
           <img
             alt="Express.js"
             src="https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white"
           />
         </a>
-        <a href="https://www.mongodb.com/">
+
+        <a href="https://sass-lang.com/">
           <img
-            alt="MongoDB"
-            src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white"
+            alt="Sass"
+            src="https://img.shields.io/badge/Sass-C69?style=for-the-badge&logo=sass&logoColor=fff"
           />
         </a>
+
+        <a href="https://tailwindcss.com/">
+          <img
+            alt="Tailwind"
+            src="https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white"
+          />
+        </a>
+
+        <a href="https://angular.dev/">
+          <img
+            alt="Angular"
+            src="https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white"
+          />
+        </a>
+
+        <a href="https://react.dev/">
+          <img
+            alt="React"
+            src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"
+          />
+        </a>
+
         <a href="https://solidjs.com/">
           <img
             alt="Solid.js"
             src="https://img.shields.io/badge/Solid.js-2C4F7C?style=for-the-badge&logo=solid&logoColor=white"
+          />
+        </a>
+
+        <a href="https://www.postgresql.org/">
+          <img
+            alt="Postgresql"
+            src="https://img.shields.io/badge/postgresql-4169e1?style=for-the-badge&logo=postgresql&logoColor=white"
+          />
+        </a>
+
+        <a href="https://www.mysql.com/">
+          <img
+            alt="MYSQL"
+            src="https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white"
+          />
+        </a>
+
+        <a href="https://www.mongodb.com/">
+          <img
+            alt="MongoDB"
+            src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white"
           />
         </a>
       </p>

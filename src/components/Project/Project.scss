@@ -36,7 +36,6 @@
     @include respond-to("mobile") {
       & {
         height: 50%;
-        max-height: 10rem;
       }
     }
   }
@@ -55,23 +54,10 @@
 
   &__title {
     font-size: 2.8rem;
-
-    @include respond-to("mobile") {
-      & {
-        font-size: 2rem;
-      }
-    }
   }
 
   &__description {
     margin-top: 1.2rem;
     font-size: 1.8rem;
-
-    @include respond-to("mobile") {
-      & {
-        font-size: 1.5rem;
-        margin-top: 0.2rem;
-      }
-    }
   }
 }

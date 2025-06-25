@@ -9,13 +9,13 @@
   transform: translate(0, -50%);
   padding: 2rem 8rem;
   z-index: 1;
-  
+
   @include respond-to("mobile") {
     & {
       padding: 0 8rem;
     }
   }
-  
+
   @include respond-to("small-mobile") {
     & {
       align-items: center;
@@ -26,7 +26,7 @@
       gap: var(--spacing-3);
     }
   }
-  
+
   &__welcome {
     font-size: var(--font-size-xlg);
 
@@ -132,6 +132,49 @@
       }
     }
   }
+
+  &__download {
+    &-title {
+      margin-top: 2rem;
+      font-size: var(--font-size-xlg);
+      margin-bottom: var(--spacing-2);
+
+      &--light {
+        color: var(--color-black);
+      }
+
+      &--dark {
+        color: var(--color-gray-400);
+      }
+    }
+
+    &-button {
+      display: flex;
+      align-items: center;
+      padding: 1.5rem 2rem;
+
+      color: var(--color-primary-light);
+      background-color: #1f2327;
+
+      width: fit-content;
+      font-size: 1.5rem;
+      text-decoration: none;
+      overflow: hidden;
+
+      & a {
+        color: var(--color-primary-light);
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+.icon {
+  margin-left: 6px;
 }
 
 .xp {

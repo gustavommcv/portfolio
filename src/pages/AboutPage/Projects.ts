@@ -6,6 +6,9 @@ import todoImage from "../../assets/Imgs/Projects/todo.png";
 import itauImage from "../../assets/Imgs/Projects/Itaú.jpg";
 import chMod from "../../assets/Imgs/Projects/chmodCalc.png";
 import Desafio1XP from "../../assets/Imgs/Projects/DesafioBootcamp1-xp.png";
+import SignoTech from "../../assets/Imgs/Projects/SignoTech.png";
+import MinimalNeovim from "../../assets/Imgs/Projects/MinimalNeovim.png";
+import Gomodoro from "../../assets/Imgs/Projects/gomodoro.png";
 
 type Project = {
   title: {
@@ -28,9 +31,82 @@ type Project = {
 const projects: Project[] = [
   {
     title: {
+      en: "Minimal Neovim",
+      pt: "Minimal Neovim",
+    },
+    description: {
+      en: "A modern, modular Neovim configuration optimized for productivity and aesthetics. Built with Lua.",
+      pt: "Uma configuração moderna e modular do Neovim optimizada para produtividade e estética. Construído com Lua.",
+    },
+    shortDescription: {
+      en: "A modern, modular Neovim configuration optimized for productivity and aesthetics. Built with Lua.",
+      pt: "Uma configuração moderna e modular do Neovim optimizada para produtividade e estética. Escrito em Lua.",
+    },
+    image: MinimalNeovim,
+    technologies: [],
+    link: "https://github.com/gustavommcv/minimal-neovim",
+  },
+
+  {
+    title: {
+      en: "Gomodoro",
+      pt: "Gomodoro",
+    },
+    description: {
+      en: "A lightning-fast CLI Pomodoro timer for developers, built in Go.",
+      pt: "Um cronómetro CLI Pomodoro extremamente rápido para programadores, escrito em Go.",
+    },
+    shortDescription: {
+      en: "A lightning-fast CLI Pomodoro timer for developers, built in Go.",
+      pt: "Um cronómetro CLI Pomodoro extremamente rápido para programadores, escrito em Go.",
+    },
+    image: Gomodoro,
+    technologies: [],
+    link: "https://github.com/gustavommcv/gomodoro",
+  },
+
+  {
+    title: {
+      en: "Voting System",
+      pt: "Sistema de Votação",
+    },
+    description: {
+      en: "Competence assessment - Signo Tech",
+      pt: "Avaliação de competência - Signo Tech",
+    },
+    shortDescription: {
+      en: "Competence assessment - Signo Tech",
+      pt: "Avaliação de competência - Signo Tech",
+    },
+    image: SignoTech,
+    technologies: [],
+    link: "https://github.com/gustavommcv/sistema-de-votacao-client",
+  },
+
+  {
+    title: {
+      en: "Chmod Calculator",
+      pt: "Chmod Calculator",
+    },
+    description: {
+      en: "Simple chmod calculator using only js, html & css ",
+      pt: "Calculadora chmod simples usando apenas js, html & css",
+    },
+    shortDescription: {
+      en: "Simple chmod calculator using only js, html & css ",
+      pt: "Calculadora chmod simples usando apenas js, html & css",
+    },
+    image: chMod,
+    technologies: ["JS", "HTML", "CSS"],
+    link: "https://github.com/gustavommcv/chmod_calculator",
+  },
+
+  {
+    title: {
       en: "Bootcamp challenge - XP",
       pt: "Desafio do bootcamp - XP",
     },
+
     description: {
       en: "Challenge of the postgraduate bootcamp in software architecture and solutions (Api restful)",
       pt: "Desafio do bootcamp da pós-graduação em arquitetura e soluções de software (Api restful)",
@@ -43,6 +119,7 @@ const projects: Project[] = [
     technologies: ["Docker", "Node.js", "Express", "MariaDB"],
     link: "https://github.com/gustavommcv/Desafio-Bootcamp-Arquitetura-de-Software",
   },
+
   {
     title: {
       en: "Itaú Unibanco - Challenge",
@@ -60,11 +137,13 @@ const projects: Project[] = [
     technologies: ["Java", "Spring", "JUnit"],
     link: "https://github.com/gustavommcv/Desafio-API-Itau",
   },
+
   {
     title: {
       en: "BooksApp",
       pt: "BooksApp",
     },
+
     description: {
       en: "A book management application that allows users to browse a catalog, leave ratings, and receive personalized recommendations based on their reviews.",
       pt: "Um aplicativo de gerenciamento de livros que permite aos usuários navegar por um catálogo, deixar avaliações e receber recomendações personalizadas com base em suas avaliações.",
@@ -77,11 +156,13 @@ const projects: Project[] = [
     technologies: ["React", "Node.js", "Express", "MongoDB"],
     link: "https://github.com/gustavommcv/BooksApp_frontend",
   },
+
   {
     title: {
       en: "Airlock REST",
       pt: "Airlock REST",
     },
+
     description: {
       en: "A clone of an API for a fictitious website, refactored to follow Clean Architecture principles, as part of a crash course on Apollo Server and GraphQL.",
       pt: "Um clone de uma API para um site fictício, refatorado para seguir os princípios da Clean Architecture, como parte de um curso intensivo sobre Apollo Server e GraphQL.",
@@ -101,23 +182,6 @@ const projects: Project[] = [
   },
   {
     title: {
-      en: "Chmod Calculator",
-      pt: "Chmod Calculator",
-    },
-    description: {
-      en: "Simple chmod calculator using only js, html & css ",
-      pt: "Calculadora chmod simples usando apenas js, html & css",
-    },
-    shortDescription: {
-      en: "Simple chmod calculator using only js, html & css ",
-      pt: "Calculadora chmod simples usando apenas js, html & css",
-    },
-    image: chMod,
-    technologies: ["JS", "HTML", "CSS"],
-    link: "https://github.com/gustavommcv/chmod_calculator",
-  },
-  {
-    title: {
       en: "Portfolio",
       pt: "Portfólio",
     },
@@ -133,6 +197,7 @@ const projects: Project[] = [
     technologies: ["Solid.js", "TypeScript", "SCSS"],
     link: "https://github.com/gustavommcv/Portfolio",
   },
+
   {
     title: {
       en: "Tic-Tac-Toe",
@@ -150,6 +215,7 @@ const projects: Project[] = [
     technologies: ["C#", "Minimax Algorithm"],
     link: "https://github.com/gustavommcv/TicTacToe",
   },
+
   {
     title: {
       en: "Todo List",
