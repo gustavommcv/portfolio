@@ -1,14 +1,14 @@
-import portfolioImage from "../../../../assets/images/projects/portfolio.webp";
-import airlockrestImage from "../../../../assets/images/projects/airlock-rest.webp";
-import booksAppImage from "../../../../assets/images/projects/books-app.webp";
-import tictactoeImage from "../../../../assets/images/projects/tic-tac-toe.webp";
-import todoImage from "../../../../assets/images/projects/todo.webp";
-import itauImage from "../../../../assets/images/projects/itau.webp";
-import chMod from "../../../../assets/images/projects/chmod-calculator.webp";
-import desafio1XP from "../../../../assets/images/projects/desafio-bootcamp-1-xp.webp";
-import signoTech from "../../../../assets/images/projects/signo-tech.webp";
-import minimalNeovim from "../../../../assets/images/projects/minimal-neovim.webp";
-import gomodoro from "../../../../assets/images/projects/gomodoro.webp";
+import portfolioImage from "../../../../../assets/images/projects/portfolio.webp";
+import airlockrestImage from "../../../../../assets/images/projects/airlock-rest.webp";
+import booksAppImage from "../../../../../assets/images/projects/books-app.webp";
+import tictactoeImage from "../../../../../assets/images/projects/tic-tac-toe.webp";
+import todoImage from "../../../../../assets/images/projects/todo.webp";
+import itauImage from "../../../../../assets/images/projects/itau.webp";
+import chMod from "../../../../../assets/images/projects/chmod-calculator.webp";
+import desafio1XP from "../../../../../assets/images/projects/desafio-bootcamp-1-xp.webp";
+import signoTech from "../../../../../assets/images/projects/signo-tech.webp";
+import minimalNeovim from "../../../../../assets/images/projects/minimal-neovim.webp";
+import gomodoro from "../../../../../assets/images/projects/gomodoro.webp";
 
 type Project = {
   title: {

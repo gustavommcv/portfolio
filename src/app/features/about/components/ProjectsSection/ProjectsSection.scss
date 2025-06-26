@@ -1,0 +1,122 @@
+@use "../../../../../mixins.scss" as *;
+
+.projects-section {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 2rem;
+  padding: 6rem;
+  max-width: 150rem;
+  width: 100%;
+  box-shadow: var(--shadow-md);
+  flex-direction: column;
+
+  @include respond-to("mobile") {
+    & {
+      border-radius: 0;
+      padding: 4rem;
+      text-align: center;
+    }
+  }
+
+  &--light {
+    background-color: #ebf1f5;
+  }
+
+  &--dark {
+    background-color: #1f2327;
+  }
+
+  @include respond-to("desktop") {
+    & {
+      flex-direction: column;
+      gap: 2rem;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &__projects {
+    padding: var(--spacing-4);
+    display: grid;
+    gap: var(--spacing-5);
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    height: 100%;
+
+    @media (max-width: 1200px) {
+      & {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 800px) {
+      & {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+
+  &__title {
+    font-size: var(--font-size-xxlg);
+    font-weight: var(--font-weight-normal);
+    margin-bottom: var(--spacing-4);
+
+    @include respond-to("tablet") {
+      & {
+        font-size: 3rem;
+      }
+    }
+
+    &--light {
+      color: var(--color-gray-900);
+    }
+
+    &--dark {
+      color: var(--color-primary-light);
+    }
+  }
+
+  &__paragraph {
+    font-size: var(--font-size-xlg);
+    margin: 2rem;
+    max-width: 70rem;
+
+    @include respond-to("tablet") {
+      & {
+        font-size: 1.8rem;
+        margin: 2rem 0;
+      }
+    }
+
+    @include respond-to("mobile") {
+      & {
+        font-size: 1.6rem;
+      }
+    }
+
+    &--light {
+      color: var(--color-gray-700);
+    }
+
+    &--dark {
+      color: var(--color-gray-500);
+    }
+
+    &--subtitle {
+      font-size: 2.5rem;
+
+      & {
+        font-size: 2.2rem;
+      }
+
+      &--light {
+        color: var(--color-gray-900);
+      }
+
+      &--dark {
+        color: var(--color-primary-light);
+      }
+    }
+  }
+
+}

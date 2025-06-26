@@ -1,4 +1,4 @@
-import { useTheme } from "../../../contexts/ThemeContext/ThemeContextProvider";
+import { useTheme } from "../../../../../contexts/ThemeContext/ThemeContextProvider";
 import "./ProjectCard.scss";
 
 type ProjectProps = {
