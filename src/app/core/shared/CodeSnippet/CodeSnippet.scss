@@ -1,0 +1,28 @@
+.code-snippet {
+  font-size: var(--font-size-lg);
+  display: flex;
+  gap: var(--spacing-6);
+  align-items: center;
+  max-width: fit-content;
+  padding: var(--spacing-3);
+  border: 1px solid transparent;
+
+  border-radius: var(--border-radius-sm);
+
+  &--light {
+    color: var(--color-black);
+    border: 1px solid #ddddff;
+    background-color: #ebf1f5;
+  }
+
+  &--dark {
+    color: var(--color-primary-light);
+    background-color: #1f2327;
+  }
+}
+
+.code-snippet__copy-button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}

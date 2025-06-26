@@ -1,0 +1,47 @@
+@use "../../../../../mixins.scss" as *;
+
+.subtitles {
+  display: flex;
+  gap: var(--spacing-3);
+  font-size: var(--font-size-xlg);
+
+  @include respond-to("really-large-desktop") {
+    font-size: 2.5rem;
+  }
+
+  @include respond-to("mobile") {
+    & {
+      font-size: var(--font-size-lg);
+    }
+  }
+
+  @include respond-to("small-mobile") {
+    & {
+      flex-direction: column;
+    }
+  }
+
+  &--light {
+    color: var(--color-primary-dark);
+  }
+
+  &--dark {
+    color: var(--color-primary-light);
+  }
+}
+
+.xp {
+  font-weight: var(--font-weight-bold);
+
+  &--light {
+    color: var(--color-black);
+  }
+
+  &--dark {
+    color: var(--color-gray-400);
+  }
+
+  &--e {
+    color: #0cba00;
+  }
+}

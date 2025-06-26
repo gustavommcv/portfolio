@@ -1,0 +1,30 @@
+@use "../../../../../mixins.scss" as *;
+
+.name-title {
+  font-size: var(--font-size-giganteporra);
+  font-weight: var(--font-weight-normal);
+
+  @include respond-to("really-large-desktop") {
+    font-size: 8rem;
+  }
+
+  @include respond-to("mobile") {
+    & {
+      font-size: var(--font-size-xxlg);
+    }
+  }
+
+  @include respond-to("small-mobile") {
+    & {
+      font-size: 3rem;
+    }
+  }
+
+  &--light {
+    color: var(--color-black);
+  }
+
+  &--dark {
+    color: var(--color-gray-400);
+  }
+}

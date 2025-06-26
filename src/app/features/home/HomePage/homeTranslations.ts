@@ -1,6 +1,6 @@
 export const homeTranslations = {
   en: {
-    welcome: "Hello world!",
+    greeting: "Hello world!",
     title: "I'm Gustavo Monnerat",
     subtitle1: "Full stack web developer",
     subtitle2: "Software Architecture Student at ",
@@ -8,7 +8,7 @@ export const homeTranslations = {
     download: "Download CV",
   },
   pt: {
-    welcome: "Olá, mundo!",
+    greeting: "Olá, mundo!",
     title: "Eu sou Gustavo Monnerat",
     subtitle1: "Desenvolvedor web full stack",
     subtitle2: "Estudante de Arquitetura de Software na ",
