@@ -1,4 +1,3 @@
-import Project from "../../components/Project/Project";
 import projects from "./Projects";
 import { useLanguage } from "../../context/LanguageContextProvider";
 import { useTheme } from "../../context/ThemeContextProvider";
@@ -6,6 +5,7 @@ import "./AboutPage.scss";
 import { aboutTranslations } from "./aboutTranslations";
 import me from "../../assets/Imgs/me.webp";
 import SkillsGrid from "../../components/SkillsGrid/SkillsGrid";
+import ProjectCard from "../../components/ProjectCard/ProjectCard";
 
 export default function AboutPage() {
   const { language } = useLanguage();
@@ -54,7 +54,7 @@ export default function AboutPage() {
         </p>
         <div class="about-page__projects">
           {projects.map((project) => (
-            <Project
+            <ProjectCard
               link={project.link}
               title={language() === "en" ? project.title.en : project.title.pt}
               description={
