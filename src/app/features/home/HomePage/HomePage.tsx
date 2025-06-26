@@ -32,18 +32,22 @@ export default function HomePage() {
           ? homeTranslations.en.welcome
           : homeTranslations.pt.welcome}
       </p>
+
       <h1 class={`home-page__title home-page__title--${theme()}`}>
         {language() === "en"
           ? homeTranslations.en.title
           : homeTranslations.pt.title}
       </h1>
+
       <div class={`home-page__subtitles home-page__subtitles--${theme()}`}>
         <p class="home-page__subtitle">
           {language() === "en"
             ? homeTranslations.en.subtitle1
             : homeTranslations.pt.subtitle1}
         </p>
+
         <span class="home__subtitle-split">|</span>
+
         <p class="home-page__subtitle">
           {language() === "en"
             ? homeTranslations.en.subtitle2
@@ -66,6 +70,7 @@ export default function HomePage() {
 
         <div class={`code-snippet code-snippet--${theme()}`}>
           <p>{email}</p>
+
           <button class="code-snippet__copy-button" onClick={handleCopyEmail}>
             {isCopied() ? (
               <svg
@@ -99,6 +104,7 @@ export default function HomePage() {
             : homeTranslations.pt.download}
           :
         </p>
+
         <div
           class={`home-page__download-button home-page__download-button--${theme()}`}
         >
