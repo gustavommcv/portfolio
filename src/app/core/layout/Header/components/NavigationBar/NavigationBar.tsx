@@ -60,8 +60,9 @@ export default function NavigationBar() {
         </button>
 
         <div
-          class={`navigation-bar__menu navigation-bar__menu--${theme()} ${isMenuOpen() ? "open" : ""
-            }`}
+          class={`navigation-bar__menu navigation-bar__menu--${theme()} ${
+            isMenuOpen() ? "open" : ""
+          }`}
         >
           <div class="navigation-bar__links">
             <A
