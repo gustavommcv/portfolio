@@ -172,13 +172,13 @@
     justify-items: center;
     height: 100%;
 
-    @media (max-width: 1500px) {
+    @media (max-width: 1200px) {
       & {
         grid-template-columns: 1fr 1fr;
       }
     }
 
-    @media (max-width: 1200px) {
+    @media (max-width: 800px) {
       & {
         grid-template-columns: 1fr;
       }
