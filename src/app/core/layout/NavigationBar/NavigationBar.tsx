@@ -1,16 +1,20 @@
-import { createSignal, onCleanup, onMount } from "solid-js";
-import { navigationBarTranslations } from "./navigationBarTranslations";
-import { A } from "@solidjs/router";
+import { A, useLocation } from "@solidjs/router";
+import { createSignal, createEffect, onCleanup, onMount } from "solid-js";
 
-import "./NavigationBar.scss";
+import { navigationBarTranslations } from "./navigationBarTranslations";
 import { useLanguage } from "../../../features/contexts/LanguageContext/LanguageContextProvider";
 import { useTheme } from "../../../features/contexts/ThemeContext/ThemeContextProvider";
+
 import ThemeButton from "./components/ThemeButton/ThemeButton";
 import LanguageButton from "./components/LanguageButton/LanguageButton";
+
+import "./NavigationBar.scss";
 
 export default function NavigationBar() {
   const { language } = useLanguage();
   const { theme } = useTheme();
+  const location = useLocation();
+
   const [isMenuOpen, setIsMenuOpen] = createSignal(false);
 
   const toggleMenu = () => {
@@ -31,12 +35,19 @@ export default function NavigationBar() {
     }
   };
 
+  createEffect(() => {
+    location.pathname;
+    setIsMenuOpen(false);
+    document.body.classList.remove("overflow-hidden");
+  });
+
   onMount(() => {
     window.addEventListener("resize", handleResize);
   });
 
   onCleanup(() => {
     window.removeEventListener("resize", handleResize);
+    document.body.classList.remove("overflow-hidden");
   });
 
   return (
@@ -53,15 +64,16 @@ export default function NavigationBar() {
             stroke-linecap="round"
             stroke-linejoin="round"
           >
-            <line x1="3" y1="12" x2="21" y2="12"></line>
-            <line x1="3" y1="6" x2="21" y2="6"></line>
-            <line x1="3" y1="18" x2="21" y2="18"></line>
+            <line x1="3" y1="12" x2="21" y2="12" />
+            <line x1="3" y1="6" x2="21" y2="6" />
+            <line x1="3" y1="18" x2="21" y2="18" />
           </svg>
         </button>
 
         <div
-          class={`navigation-bar__menu navigation-bar__menu--${theme()} ${isMenuOpen() ? "open" : ""
-            }`}
+          class={`navigation-bar__menu navigation-bar__menu--${theme()} ${
+            isMenuOpen() ? "open" : ""
+          }`}
         >
           <div class="navigation-bar__links">
             <A
@@ -75,6 +87,7 @@ export default function NavigationBar() {
                 ? navigationBarTranslations.en.home
                 : navigationBarTranslations.pt.home}
             </A>
+
             <A
               activeClass="navigation-bar__link--active"
               inactiveClass="navigation-bar__link"
