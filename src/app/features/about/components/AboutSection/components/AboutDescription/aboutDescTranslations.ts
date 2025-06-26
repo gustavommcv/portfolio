@@ -1,4 +1,4 @@
-export const aboutTranslations = {
+const aboutTranslations = {
   en: {
     introduction:
       "I'm Gustavo Monnerat, a software developer and a postgraduate student in Software Architecture.",
@@ -20,3 +20,5 @@ export const aboutTranslations = {
       "Meu foco é desenvolver aplicações modernas e bem estruturadas, garantindo qualidade de código, boas práticas e arquitetura robusta. Atualmente, estou focando em Go (Golang) em meus estudos.",
   },
 };
+
+export default aboutTranslations;
