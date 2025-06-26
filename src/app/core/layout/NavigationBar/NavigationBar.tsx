@@ -1,12 +1,12 @@
 import { createSignal, onCleanup, onMount } from "solid-js";
 import { navigationBarTranslations } from "./navigationBarTranslations";
-import LanguageButton from "../LanguageButton/LanguageButton";
-import ThemeButton from "../ThemeButton/ThemeButton";
 import { A } from "@solidjs/router";
-import { useLanguage } from "../../../../../features/contexts/LanguageContext/LanguageContextProvider";
-import { useTheme } from "../../../../../features/contexts/ThemeContext/ThemeContextProvider";
 
 import "./NavigationBar.scss";
+import { useLanguage } from "../../../features/contexts/LanguageContext/LanguageContextProvider";
+import { useTheme } from "../../../features/contexts/ThemeContext/ThemeContextProvider";
+import ThemeButton from "./components/ThemeButton/ThemeButton";
+import LanguageButton from "./components/LanguageButton/LanguageButton";
 
 export default function NavigationBar() {
   const { language } = useLanguage();
@@ -60,9 +60,8 @@ export default function NavigationBar() {
         </button>
 
         <div
-          class={`navigation-bar__menu navigation-bar__menu--${theme()} ${
-            isMenuOpen() ? "open" : ""
-          }`}
+          class={`navigation-bar__menu navigation-bar__menu--${theme()} ${isMenuOpen() ? "open" : ""
+            }`}
         >
           <div class="navigation-bar__links">
             <A

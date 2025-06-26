@@ -1,4 +1,4 @@
-@use "../../../../../../mixins.scss" as *;
+@use "../../../../mixins.scss" as *;
 
 .navigation-bar {
   border-radius: var(--border-radius-lg);
@@ -174,7 +174,6 @@
 
 // Add this to make the links and settings visible when the menu is open
 .navigation-bar__menu.open {
-
   .navigation-bar__links,
   .navigation-bar__settings {
     opacity: 1;
