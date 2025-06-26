@@ -1,0 +1,237 @@
+@use "../../../../mixins.scss" as *;
+
+.home-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  padding: 2rem 8rem;
+  z-index: 1;
+
+  @include respond-to("mobile") {
+    & {
+      padding: 0 8rem;
+    }
+  }
+
+  @include respond-to("small-mobile") {
+    & {
+      align-items: center;
+      text-align: center;
+      margin: 0 auto;
+      padding: 0 2rem;
+      width: 100%;
+      gap: var(--spacing-3);
+    }
+  }
+
+  &__welcome {
+    font-size: var(--font-size-xlg);
+
+    @include respond-to("really-large-desktop") {
+      font-size: var(--font-size-xxlg);
+    }
+
+    @include respond-to("mobile") {
+      & {
+        font-size: var(--font-size-xlg);
+      }
+    }
+
+    &--light {
+      color: var(--color-primary);
+    }
+
+    &--dark {
+      color: var(--color-primary-light);
+    }
+  }
+
+  &__title {
+    font-size: var(--font-size-giganteporra);
+    font-weight: var(--font-weight-normal);
+
+    @include respond-to("really-large-desktop") {
+      font-size: 8rem;
+    }
+
+    @include respond-to("mobile") {
+      & {
+        font-size: var(--font-size-xxlg);
+      }
+    }
+
+    @include respond-to("small-mobile") {
+      & {
+        font-size: 3rem;
+      }
+    }
+
+    &--light {
+      color: var(--color-black);
+    }
+
+    &--dark {
+      color: var(--color-gray-400);
+    }
+  }
+
+  &__subtitles {
+    display: flex;
+    gap: var(--spacing-3);
+    font-size: var(--font-size-xlg);
+
+    @include respond-to("really-large-desktop") {
+      font-size: 2.5rem;
+    }
+
+    @include respond-to("mobile") {
+      & {
+        font-size: var(--font-size-lg);
+      }
+    }
+
+    @include respond-to("small-mobile") {
+      & {
+        flex-direction: column;
+      }
+    }
+
+    &--light {
+      color: var(--color-primary-dark);
+    }
+
+    &--dark {
+      color: var(--color-primary-light);
+    }
+  }
+
+  &__contact {
+    margin-top: var(--spacing-6);
+
+    @include respond-to("small-mobile") {
+      & {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+    &-title {
+      font-size: var(--font-size-xlg);
+      margin-bottom: var(--spacing-2);
+
+      &--light {
+        color: var(--color-black);
+      }
+
+      &--dark {
+        color: var(--color-gray-400);
+      }
+    }
+  }
+
+  &__download {
+    &-title {
+      margin-top: 2rem;
+      font-size: var(--font-size-xlg);
+      margin-bottom: var(--spacing-2);
+
+      &--light {
+        color: var(--color-black);
+      }
+
+      &--dark {
+        color: var(--color-gray-400);
+      }
+    }
+
+    &-button {
+      display: flex;
+      align-items: center;
+      padding: var(--spacing-3);
+
+      color: var(--color-primary-light);
+
+      width: fit-content;
+      font-size: 1.5rem;
+      text-decoration: none;
+      overflow: hidden;
+
+      &--light {
+        color: var(--color-black);
+        border: 1px solid #ddddff;
+        background-color: #ebf1f5;
+      }
+
+      &--dark {
+        color: var(--color-primary-light);
+        background-color: #1f2327;
+      }
+    }
+
+    &-link {
+      color: var(--color-primary-light);
+      text-decoration: none;
+
+      &--light {
+        color: var(--color-black);
+      }
+
+      &--dark {
+        color: var(--color-primary-light);
+      }
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.xp {
+  font-weight: var(--font-weight-bold);
+
+  &--light {
+    color: var(--color-black);
+  }
+
+  &--dark {
+    color: var(--color-gray-400);
+  }
+
+  &--e {
+    color: #0cba00;
+  }
+}
+
+.code-snippet {
+  font-size: var(--font-size-lg);
+  display: flex;
+  gap: var(--spacing-6);
+  align-items: center;
+  max-width: fit-content;
+  padding: var(--spacing-3);
+  border: 1px solid transparent;
+
+  border-radius: var(--border-radius-sm);
+
+  &--light {
+    color: var(--color-black);
+    border: 1px solid #ddddff;
+    background-color: #ebf1f5;
+  }
+
+  &--dark {
+    color: var(--color-primary-light);
+    background-color: #1f2327;
+  }
+}
+
+.code-snippet__copy-button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
