@@ -1,6 +1,5 @@
-import { useLanguage } from "../../../contexts/LanguageContext/LanguageContextProvider";
-import { useTheme } from "../../../contexts/ThemeContext/ThemeContextProvider";
-
+import { useLanguage } from "../../../../../contexts/LanguageContext/LanguageContextProvider";
+import { useTheme } from "../../../../../contexts/ThemeContext/ThemeContextProvider";
 import "./Greeting.scss";
 
 interface GreetingProps {

@@ -1,7 +1,7 @@
-import CodeSnippet from "../../../../core/shared/CodeSnippet/CodeSnippet";
-import DownloadButton from "../../../../core/shared/DownloadButton/DownloadButton";
-import { useLanguage } from "../../../contexts/LanguageContext/LanguageContextProvider";
-import { useTheme } from "../../../contexts/ThemeContext/ThemeContextProvider";
+import CodeSnippet from "../../../../../../core/shared/CodeSnippet/CodeSnippet";
+import DownloadButton from "../../../../../../core/shared/DownloadButton/DownloadButton";
+import { useLanguage } from "../../../../../contexts/LanguageContext/LanguageContextProvider";
+import { useTheme } from "../../../../../contexts/ThemeContext/ThemeContextProvider";
 import "./ContactsSection.scss";
 
 interface ContactsSectionProps {

@@ -1,0 +1,31 @@
+@use "../../../../../mixins.scss" as *;
+
+.presentation-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 2rem;
+  padding: 6rem;
+  max-width: 150rem;
+  width: 100%;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 500;
+
+  &--light {
+    background-color: #ebf1f5;
+  }
+
+  &--dark {
+    background-color: #1f2327;
+  }
+
+  box-shadow: var(--shadow-md);
+
+  @include respond-to("mobile") {
+    & {
+      border-radius: 0;
+      padding: 4rem;
+      text-align: center;
+    }
+  }
+}

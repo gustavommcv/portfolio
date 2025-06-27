@@ -1,0 +1,11 @@
+.mini-about {
+  font-size: 2rem;
+
+  &--light {
+    color: var(--color-black);
+  }
+
+  &--dark {
+    color: var(--color-gray-400);
+  }
+}

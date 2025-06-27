@@ -1,25 +1,9 @@
-@use "../../../../../mixins.scss" as *;
+@use "../../../../../../../mixins.scss" as *;
 
 .subtitles {
   display: flex;
   gap: var(--spacing-3);
-  font-size: var(--font-size-xlg);
-
-  @include respond-to("really-large-desktop") {
-    font-size: 2.5rem;
-  }
-
-  @include respond-to("mobile") {
-    & {
-      font-size: var(--font-size-lg);
-    }
-  }
-
-  @include respond-to("small-mobile") {
-    & {
-      flex-direction: column;
-    }
-  }
+  font-size: 2rem;
 
   &--light {
     color: var(--color-primary-dark);

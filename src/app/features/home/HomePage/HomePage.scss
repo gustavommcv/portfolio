@@ -1,29 +1,18 @@
 @use "../../../../mixins.scss" as *;
 
 .home-page {
+  padding: 2rem 8rem;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  position: absolute;
-  top: 50%;
-  transform: translate(0, -50%);
-  padding: 2rem 8rem;
-  z-index: 1;
+  align-items: center;
+  gap: 2rem;
 
   @include respond-to("mobile") {
     & {
-      padding: 0 8rem;
-    }
-  }
-
-  @include respond-to("small-mobile") {
-    & {
-      align-items: center;
-      text-align: center;
-      margin: 0 auto;
-      padding: 0 2rem;
-      width: 100%;
-      gap: var(--spacing-3);
+      padding: 2rem 0;
     }
   }
 }

@@ -1,0 +1,15 @@
+@use "../../../../../../../mixins.scss" as *;
+
+.name-title {
+  font-size: 3rem;
+  font-weight: var(--font-weight-normal);
+  margin-bottom: 1rem;
+
+  &--light {
+    color: var(--color-black);
+  }
+
+  &--dark {
+    color: var(--color-gray-400);
+  }
+}

@@ -1,0 +1,36 @@
+.terminal-line {
+  display: flex;
+  gap: 2rem;
+  font-size: 4rem;
+  overflow: hidden;
+  white-space: nowrap;
+  width: fit-content;
+  color: #ced4da;
+  margin-bottom: 3rem;
+
+  /* cursor */
+  border-right: 10px solid white;
+  animation:
+    typing 2s steps(25),
+    blink 0.5s step-end infinite alternate;
+}
+
+.command {
+  color: #19cb00;
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 23ch;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
