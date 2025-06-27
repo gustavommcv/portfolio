@@ -34,13 +34,16 @@
     width: 100%;
     justify-content: space-between;
     box-shadow: var(--shadow-md);
+    text-transform: lowercase;
+
+    border: var(--section-border);
 
     &--light {
       background-color: #ebf1f5;
     }
 
     &--dark {
-      background-color: #1f2327;
+      background-color: var(--section-background-color-dark);
     }
 
     @include respond-to("mobile") {
@@ -62,6 +65,33 @@
         border-radius: 0;
         align-items: center;
         justify-content: center;
+      }
+    }
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 2rem;
+
+    &--left {
+      color: #52bdff;
+    }
+
+    &--middle {
+      color: white;
+    }
+
+    &--right {
+      color: #08bdba;
+    }
+
+    &--link {
+      text-decoration: none;
+    }
+
+    @include respond-to("mobile") {
+      & {
+        opacity: 0;
       }
     }
   }
@@ -114,15 +144,14 @@
     transition: var(--transition-duration) all var(--transition-timing-function);
 
     &--active {
-      color: var(--color-primary);
-      text-decoration: none;
+      color: var(--normal-text-color-dark);
       font-size: var(--font-size-xlg);
       pointer-events: none;
     }
 
     &:hover {
       text-decoration: underline;
-      color: var(--color-primary);
+      color: var(--normal-text-color-dark);
     }
   }
 
@@ -175,6 +204,7 @@
 
 // Add this to make the links and settings visible when the menu is open
 .navigation-bar__menu.open {
+
   .navigation-bar__links,
   .navigation-bar__settings {
     opacity: 1;

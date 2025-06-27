@@ -1,8 +1,6 @@
 import { A, useLocation } from "@solidjs/router";
 import { createSignal, createEffect, onCleanup, onMount } from "solid-js";
 
-import { navigationBarTranslations } from "./navigationBarTranslations";
-import { useLanguage } from "../../../features/contexts/LanguageContext/LanguageContextProvider";
 import { useTheme } from "../../../features/contexts/ThemeContext/ThemeContextProvider";
 
 import ThemeButton from "./components/ThemeButton/ThemeButton";
@@ -11,7 +9,6 @@ import LanguageButton from "./components/LanguageButton/LanguageButton";
 import "./NavigationBar.scss";
 
 export default function NavigationBar() {
-  const { language } = useLanguage();
   const { theme } = useTheme();
   const location = useLocation();
 
@@ -75,6 +72,16 @@ export default function NavigationBar() {
             isMenuOpen() ? "open" : ""
           }`}
         >
+          <A class="navigation-bar__title--link" href="/">
+            <h1
+              class={`navigation-bar__title navigation-bar__title--${theme()}`}
+            >
+              <span class={`navigation-bar__title--left`}>gus</span>
+              <span class={`navigation-bar__title--middle`}>::</span>
+              <span class={`navigation-bar__title--right`}>monnerat</span>
+            </h1>
+          </A>
+
           <div class="navigation-bar__links">
             <A
               activeClass="navigation-bar__link--active"
@@ -83,9 +90,7 @@ export default function NavigationBar() {
               end
               onClick={toggleMenu}
             >
-              {language() === "en"
-                ? navigationBarTranslations.en.home
-                : navigationBarTranslations.pt.home}
+              Home
             </A>
 
             <A
@@ -94,9 +99,7 @@ export default function NavigationBar() {
               href="/about"
               onClick={toggleMenu}
             >
-              {language() === "en"
-                ? navigationBarTranslations.en.about
-                : navigationBarTranslations.pt.about}
+              About
             </A>
           </div>
 
