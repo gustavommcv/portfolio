@@ -9,22 +9,25 @@ interface TerminalLineProps {
 }
 
 export default function TerminalLine(props: TerminalLineProps) {
-  const username = () => props.username || "[gustavo";
-  const hostname = () => props.hostname || "archlinux";
-  const path = () => props.path || "~]";
-  const prompt = () => props.prompt || "$";
-  const command = () => props.command || "whoami";
+  const username = props.username;
+  const hostname = props.hostname;
+  const path = props.path;
+  const prompt = props.prompt;
+  const command = props.command;
 
   return (
     <div class="terminal-line">
-      <span class="user-host">
-        {username()}@{hostname()}
-      </span>
+      {username && (
+        <span class="user-host">
+          {username}
+          {hostname}
+        </span>
+      )}
       <div>
-        <span class="path">{path()}</span>
-        <span class="prompt">{prompt()}</span>
+        {path && <span class="path">{path}</span>}
+        <span class="prompt">{prompt}</span>
       </div>
-      <span class="command">{command()}</span>
+      <span class="command">{command}</span>
     </div>
   );
 }

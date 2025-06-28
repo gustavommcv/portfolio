@@ -72,17 +72,17 @@ export default function NavigationBar() {
             isMenuOpen() ? "open" : ""
           }`}
         >
-          <A class="navigation-bar__title--link" href="/">
-            <h1
-              class={`navigation-bar__title navigation-bar__title--${theme()}`}
-            >
-              <span class={`navigation-bar__title--left`}>gus</span>
-              <span class={`navigation-bar__title--middle`}>::</span>
-              <span class={`navigation-bar__title--right`}>monnerat</span>
-            </h1>
-          </A>
-
           <div class="navigation-bar__links">
+            <A class="navigation-bar__title--link" href="/">
+              <h1
+                class={`navigation-bar__title navigation-bar__title--${theme()}`}
+              >
+                <span class={`navigation-bar__title--left`}>gus</span>
+                <span class={`navigation-bar__title--middle`}>::</span>
+                <span class={`navigation-bar__title--right`}>monnerat</span>
+              </h1>
+            </A>
+
             <A
               activeClass="navigation-bar__link--active"
               inactiveClass="navigation-bar__link"
