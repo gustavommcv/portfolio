@@ -1,3 +1,4 @@
+import { useTheme } from "../../../../../features/contexts/ThemeContext/ThemeContextProvider";
 import "./TerminalLine.scss";
 
 interface TerminalLineProps {
@@ -15,8 +16,10 @@ export default function TerminalLine(props: TerminalLineProps) {
   const prompt = props.prompt;
   const command = props.command;
 
+  const { theme } = useTheme();
+
   return (
-    <div class="terminal-line">
+    <div class={`terminal-line terminal-line--${theme()}`}>
       {username && (
         <span class="user-host">
           {username}
@@ -27,7 +30,7 @@ export default function TerminalLine(props: TerminalLineProps) {
         {path && <span class="path">{path}</span>}
         <span class="prompt">{prompt}</span>
       </div>
-      <span class="command">{command}</span>
+      <span class={`command command--${theme()}`}>{command}</span>
     </div>
   );
 }

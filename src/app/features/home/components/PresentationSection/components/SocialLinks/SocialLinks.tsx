@@ -1,11 +1,14 @@
+import { useTheme } from "../../../../../contexts/ThemeContext/ThemeContextProvider";
 import "./SocialLinks.scss";
 
 export default function SocialLinks() {
+  const { theme } = useTheme();
+
   return (
-    <ul class={`social-links`}>
+    <ul class={`social-links social-links--${theme()}`}>
       <li>
         <a
-          class={`social-links__link`}
+          class={`social-links__link social-links__link--${theme()}`}
           target="_blank"
           href="https://www.linkedin.com/in/gustavommcv/"
         >
@@ -14,7 +17,7 @@ export default function SocialLinks() {
       </li>
       <li>
         <a
-          class={`social-links__link`}
+          class={`social-links__link social-links__link--${theme()}`}
           target="_blank"
           href="https://github.com/gustavommcv"
         >

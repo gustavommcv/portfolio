@@ -1,16 +1,29 @@
 .social-links {
   font-size: 2.5rem;
   margin-left: 5rem;
-  color: var(--external-link-color-dark);
   margin-bottom: 4rem;
 
-  &__link {
+  &--light {
+    color: var(--external-link-color-light);
+  }
+
+  &--dark {
     color: var(--external-link-color-dark);
+  }
+
+  &__link {
     text-decoration: none;
+
+    &--light {
+      color: var(--external-link-color-light);
+    }
+
+    &--dark {
+      color: var(--external-link-color-dark);
+    }
 
     &:hover {
       text-decoration: underline wavy;
-      text-decoration-color: #0087bd;
     }
   }
 

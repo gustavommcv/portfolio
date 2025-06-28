@@ -1,5 +1,4 @@
 .navigation-button {
-  background-color: #2d2d2d;
   border: none;
   padding: 1rem 3rem;
   font-size: 2.5rem;
@@ -11,7 +10,15 @@
 
   transition: all 0.3s;
 
-  color: var(--subtitle-color-dark);
+  &--light {
+    background-color: transparent;
+    color: var(--external-link-color-light);
+  }
+
+  &--dark {
+    background-color: #2d2d2d;
+    color: var(--subtitle-color-dark);
+  }
 
   &:hover {
     text-decoration: underline;

@@ -4,7 +4,6 @@
   overflow: hidden;
   white-space: nowrap;
   width: fit-content;
-  color: #ced4da;
   margin-bottom: 3rem;
 
   font-size: 3rem;
@@ -20,10 +19,27 @@
     margin-bottom: 2rem;
     gap: 1rem;
   }
+
+  &--light {
+    color: var(--normal-text-color-light);
+    border-right: 10px solid gray;
+  }
+
+  &--dark {
+    color: var(--normal-text-color-dark);
+  }
 }
 
 .command {
   color: #19cb00;
+
+  &--light {
+    color: var(--accepted-command-color-light);
+  }
+
+  &--dark {
+    color: var(--accepted-command-color-dark);
+  }
 }
 
 @keyframes typing {

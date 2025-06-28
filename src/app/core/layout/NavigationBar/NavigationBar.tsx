@@ -77,14 +77,26 @@ export default function NavigationBar() {
               <h1
                 class={`navigation-bar__title navigation-bar__title--${theme()}`}
               >
-                <span class={`navigation-bar__title--left`}>gus</span>
-                <span class={`navigation-bar__title--middle`}>::</span>
-                <span class={`navigation-bar__title--right`}>monnerat</span>
+                <span
+                  class={`navigation-bar__title--left navigation-bar__title--left--${theme()}`}
+                >
+                  gus
+                </span>
+                <span
+                  class={`navigation-bar__title--middle navigation-bar__title--middle--${theme()}`}
+                >
+                  ::
+                </span>
+                <span
+                  class={`navigation-bar__title--right navigation-bar__title--right--${theme()}`}
+                >
+                  monnerat
+                </span>
               </h1>
             </A>
 
             <A
-              activeClass="navigation-bar__link--active"
+              activeClass={`navigation-bar__link--active navigation-bar__link--active--${theme()}`}
               inactiveClass="navigation-bar__link"
               href="/"
               end
@@ -94,7 +106,7 @@ export default function NavigationBar() {
             </A>
 
             <A
-              activeClass="navigation-bar__link--active"
+              activeClass={`navigation-bar__link--active navigation-bar__link--active--${theme()}`}
               inactiveClass="navigation-bar__link"
               href="/about"
               onClick={toggleMenu}

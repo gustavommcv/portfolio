@@ -3,11 +3,11 @@
   margin-bottom: 2rem;
 
   &--light {
-    color: var(--color-black);
+    color: var(--normal-text-color-light);
   }
 
   &--dark {
-    color: var(--color-gray-400);
+    color: var(--normal-text-color-dark);
   }
 
   @media screen and (max-width: 600px) {

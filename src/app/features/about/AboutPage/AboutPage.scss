@@ -15,14 +15,4 @@
       padding: 2rem 0;
     }
   }
-
-  &--light {
-    background-color: #f8f9fa;
-    background-attachment: fixed;
-    background-size: cover;
-  }
-
-  &--dark {
-    background-color: var(--body-background-color-dark);
-  }
 }

@@ -11,7 +11,7 @@
   }
 
   &--light {
-    color: var(--color-primary-dark);
+    color: var(--subtitle-color-light);
   }
 
   &--dark {
@@ -27,7 +27,7 @@
   font-weight: var(--font-weight-bold);
 
   &--light {
-    color: var(--color-black);
+    color: var(--normal-text-color-light);
   }
 
   &--dark {
