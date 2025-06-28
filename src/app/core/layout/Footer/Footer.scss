@@ -1,7 +1,14 @@
 .footer {
-  color: white;
   text-align: center;
   padding: 4rem 2rem 4rem 2rem;
+
+  &--light {
+    color: var(--normal-text-color-light);
+  }
+
+  &--dark {
+    color: var(--normal-text-color-dark);
+  }
 
   @media screen and (max-width: 630px) {
     padding: 4rem 0;
@@ -37,6 +44,12 @@
   }
 
   &__link {
-    color: white;
+    &--light {
+      color: var(--normal-text-color-light);
+    }
+
+    &--dark {
+      color: var(--normal-text-color-dark);
+    }
   }
 }
