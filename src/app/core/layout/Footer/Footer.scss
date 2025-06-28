@@ -1,0 +1,42 @@
+.footer {
+  color: white;
+  text-align: center;
+  padding: 4rem 2rem 4rem 2rem;
+
+  @media screen and (max-width: 630px) {
+    padding: 4rem 0;
+  }
+
+  &__heart {
+    color: red;
+  }
+
+  &__copyright {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+
+    @media screen and (max-width: 800px) {
+      font-size: 2rem;
+    }
+
+    @media screen and (max-width: 630px) {
+      font-size: 1.5rem;
+    }
+  }
+
+  &__theme-credit {
+    font-size: 2.8rem;
+
+    @media screen and (max-width: 800px) {
+      font-size: 2.2rem;
+    }
+
+    @media screen and (max-width: 630px) {
+      font-size: 1.6rem;
+    }
+  }
+
+  &__link {
+    color: white;
+  }
+}
