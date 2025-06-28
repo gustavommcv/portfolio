@@ -1,0 +1,34 @@
+.contact-links {
+  font-size: 2.5rem;
+  margin-left: 4rem;
+  margin-bottom: 4rem;
+
+  &--light {
+    color: var(--external-link-color-light);
+  }
+
+  &--dark {
+    color: var(--external-link-color-dark);
+  }
+
+  &__link {
+    text-decoration: none;
+
+    &--light {
+      color: var(--external-link-color-light);
+    }
+
+    &--dark {
+      color: var(--external-link-color-dark);
+    }
+
+    &:hover {
+      text-decoration: underline wavy;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    font-size: 2rem;
+    margin-left: 4rem;
+  }
+}

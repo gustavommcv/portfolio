@@ -1,0 +1,38 @@
+.contact-section {
+  &__warning {
+    text-align: center;
+    font-size: 2rem;
+
+    margin-bottom: 3rem;
+
+    @media screen and (max-width: 600px) {
+      font-size: 1.8rem;
+    }
+
+    &--light {
+      color: var(--normal-text-color-light);
+    }
+
+    &--dark {
+      color: var(--normal-text-color-dark);
+    }
+  }
+
+  &__desc {
+    font-size: 2.5rem;
+
+    margin-bottom: 2rem;
+
+    @media screen and (max-width: 600px) {
+      font-size: 2rem;
+    }
+
+    &--light {
+      color: var(--normal-text-color-light);
+    }
+
+    &--dark {
+      color: var(--normal-text-color-dark);
+    }
+  }
+}

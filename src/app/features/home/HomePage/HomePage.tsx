@@ -2,6 +2,7 @@ import "./HomePage.scss";
 import PresentationSection from "../components/PresentationSection/PresentationSection";
 import ServicesSection from "../components/ServicesSection/ServicesSection";
 import TechStack from "../components/TechStack/TechStack";
+import ContactSection from "../components/ContactSection/ContactSection";
 
 export default function HomePage() {
   return (
@@ -11,6 +12,8 @@ export default function HomePage() {
       <ServicesSection />
 
       <TechStack />
+
+      <ContactSection />
     </div>
   );
 }

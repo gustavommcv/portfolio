@@ -1,6 +1,8 @@
 import { useTheme } from "../../../../../contexts/ThemeContext/ThemeContextProvider";
 import "./SocialLinks.scss";
 
+// TODO
+// Mix with ContactLinks component
 export default function SocialLinks() {
   const { theme } = useTheme();
 

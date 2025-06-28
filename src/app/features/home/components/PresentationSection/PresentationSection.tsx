@@ -9,6 +9,8 @@ import "./PresentationSection.scss";
 import NavigationButton from "../../../../core/shared/NavigationButton/NavigationButton";
 import { useLanguage } from "../../../contexts/LanguageContext/LanguageContextProvider";
 
+// TODO
+// dinamic language
 export default function PresentationSection() {
   const { language } = useLanguage();
 

@@ -11,6 +11,8 @@ interface ContactsSectionProps {
   ptDownload: string;
 }
 
+// TODO
+// use this component on about page
 export default function ContactsSection({
   enContact,
   ptContact,
