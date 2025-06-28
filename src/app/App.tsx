@@ -8,7 +8,7 @@ function App() {
   const { theme } = useTheme();
 
   createEffect(() => {
-    document.body.style.background = theme() === "dark" ? "#0f0f11" : "#f8f9fa";
+    document.body.style.background = theme() === "dark" ? "#0C0C0C" : "#f8f9fa";
   });
 
   onMount(() => {
