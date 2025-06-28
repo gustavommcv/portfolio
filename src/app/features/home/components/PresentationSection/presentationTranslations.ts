@@ -1,17 +1,15 @@
 const presentationTranslations = {
   en: {
     greeting: "Hello world!",
-    subtitle1: "Full stack web developer",
+    subtitle1: "Full stack developer",
     subtitle2: "Software Architecture Student at ",
-    contact: "Contact me",
-    download: "Download CV",
+    contact: "Contact",
   },
   pt: {
     greeting: "Olá, mundo!",
-    subtitle1: "Desenvolvedor web full stack",
+    subtitle1: "Desenvolvedor full stack",
     subtitle2: "Estudante de Arquitetura de Software na ",
-    contact: "Entre em contato",
-    download: "Baixar Currículo",
+    contact: "Contato",
   },
 };
 

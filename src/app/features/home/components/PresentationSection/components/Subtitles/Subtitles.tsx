@@ -10,9 +10,9 @@ interface SubtitlesProps {
 }
 
 export default function Subtitles({
-  enSubtitle1,
+  // enSubtitle1,
   enSubtitle2,
-  ptSubtitle1,
+  // ptSubtitle1,
   ptSubtitle2,
 }: SubtitlesProps) {
   const { theme } = useTheme();
@@ -20,18 +20,18 @@ export default function Subtitles({
 
   return (
     <div class={`subtitles subtitles--${theme()}`}>
-      <p class="subtitle-1">
-        {language() === "en" ? enSubtitle1 : ptSubtitle1}
-      </p>
+      {/* <span class="subtitle-1"> */}
+      {/*   {language() === "en" ? enSubtitle1 : ptSubtitle1} */}
+      {/* </span> */}
 
-      <span class="subtitles-split">&</span>
+      {/* <span class="subtitles-split">&</span> */}
 
-      <p class="subtitle-2">
+      <span class="subtitle-2">
         {language() === "en" ? enSubtitle2 : ptSubtitle2}{" "}
         <span class={`xp xp--${theme()}`}>
           XP<span class="xp--e">E</span>
         </span>
-      </p>
+      </span>
     </div>
   );
 }

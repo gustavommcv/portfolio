@@ -29,7 +29,7 @@
   &__menu {
     display: flex;
     border-radius: var(--border-radius-lg);
-    padding: 2rem 4rem;
+    padding: 1.5rem 4rem;
     gap: var(--spacing-5);
     width: 100%;
     justify-content: space-between;
@@ -52,6 +52,7 @@
         align-items: center;
         width: 100%;
         padding: 1rem 0;
+        border: none;
         gap: 1.5rem;
         height: 0;
         position: fixed;
@@ -91,7 +92,7 @@
 
     @include respond-to("mobile") {
       & {
-        opacity: 0;
+        display: none;
       }
     }
   }
@@ -104,6 +105,7 @@
     @include respond-to("mobile") {
       & {
         opacity: 0;
+        display: none;
       }
     }
   }
@@ -169,7 +171,7 @@
     }
 
     &--dark {
-      background-color: #1f2327;
+      background-color: var(--section-background-color-dark);
     }
 
     @include respond-to("mobile") {
@@ -179,14 +181,6 @@
         top: 0;
         width: 100%;
         justify-content: center;
-      }
-
-      &--light {
-        border-bottom: 1px solid #1f232742;
-      }
-
-      &--dark {
-        border-bottom: 1px solid var(--color-primary);
       }
     }
 
@@ -202,12 +196,12 @@
   stroke: var(--color-gray-500);
 }
 
-// Add this to make the links and settings visible when the menu is open
 .navigation-bar__menu.open {
 
   .navigation-bar__links,
   .navigation-bar__settings {
     opacity: 1;
     transition: opacity 0.3s ease-in-out;
+    display: flex;
   }
 }

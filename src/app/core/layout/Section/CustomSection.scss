@@ -1,0 +1,35 @@
+@use "../../../../mixins.scss" as *;
+
+.custom-section {
+  max-width: 150rem;
+  width: 100%;
+  font-weight: 400;
+  box-shadow: var(--shadow-md);
+  border-radius: var(--border-radius-lg);
+  border: var(--section-border);
+  padding: 3rem;
+
+  &--light {
+    background-color: #ebf1f5;
+  }
+
+  &--dark {
+    background-color: var(--section-background-color-dark);
+  }
+
+  &__title {
+    color: var(--title-color-dark);
+    align-self: flex-start;
+    font-size: 3.5rem;
+    font-weight: 500;
+
+    display: block;
+    width: 100%;
+    max-width: 150rem;
+    margin: 0 auto;
+  }
+
+  @media screen and (max-width: 600px) {
+    padding: 2rem;
+  }
+}

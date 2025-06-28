@@ -1,5 +1,6 @@
 .mini-about {
-  font-size: 2rem;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
 
   &--light {
     color: var(--color-black);
@@ -7,5 +8,9 @@
 
   &--dark {
     color: var(--color-gray-400);
+  }
+
+  @media screen and (max-width: 600px) {
+    font-size: 2rem;
   }
 }

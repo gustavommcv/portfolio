@@ -1,6 +1,5 @@
 import { ParentComponent } from "solid-js";
 import { useTheme } from "../features/contexts/ThemeContext/ThemeContextProvider";
-import FloatingIcons from "../core/shared/FloatingIcons/FloatingIcons";
 import NavigationBar from "../core/layout/NavigationBar/NavigationBar";
 
 import "./Template.scss";
@@ -14,7 +13,7 @@ const Template: ParentComponent = (props) => {
         <NavigationBar />
       </header>
 
-      <FloatingIcons />
+      {/* <FloatingIcons /> */}
 
       <div class="page-layout__children">{props.children}</div>
     </div>

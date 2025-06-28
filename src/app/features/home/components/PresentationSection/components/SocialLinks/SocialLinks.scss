@@ -1,0 +1,21 @@
+.social-links {
+  font-size: 2.5rem;
+  margin-left: 5rem;
+  color: var(--external-link-color-dark);
+  margin-bottom: 2rem;
+
+  &__link {
+    color: var(--external-link-color-dark);
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline wavy;
+      text-decoration-color: #0087bd;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    font-size: 2rem;
+    margin-left: 4rem;
+  }
+}

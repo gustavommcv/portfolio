@@ -1,18 +1,24 @@
 .terminal-line {
   display: flex;
   gap: 2rem;
-  font-size: 4rem;
   overflow: hidden;
   white-space: nowrap;
   width: fit-content;
   color: #ced4da;
   margin-bottom: 3rem;
 
+  font-size: 3rem;
+
   /* cursor */
   border-right: 10px solid white;
   animation:
     typing 2s steps(25),
     blink 0.5s step-end infinite alternate;
+
+  @media screen and (max-width: 600px) {
+    font-size: 2rem; 
+    margin-bottom: 2rem;
+  }
 }
 
 .command {
@@ -25,7 +31,7 @@
   }
 
   100% {
-    width: 23ch;
+    width: 30ch;
   }
 }
 

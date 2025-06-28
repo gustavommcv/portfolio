@@ -1,36 +1,39 @@
-import { useTheme } from "../../../contexts/ThemeContext/ThemeContextProvider";
-import ContactsSection from "./components/ContactSection/ContactsSection";
 import NameTitle from "./components/NameTitle/NameTitle";
 import Subtitles from "./components/Subtitles/Subtitles";
 import presentationTranslations from "./presentationTranslations";
+import MiniAbout from "./components/MiniAbout/MiniAbout";
+import CustomSection from "../../../../core/layout/Section/CustomSection";
+import SocialLinks from "./components/SocialLinks/SocialLinks";
 
 import "./PresentationSection.scss";
-import TerminalLine from "./components/TerminalLine/TerminalLine";
-import MiniAbout from "./components/MiniAbout/MiniAbout";
+import NavigationButton from "../../../../core/shared/NavigationButton/NavigationButton";
+import { useLanguage } from "../../../contexts/LanguageContext/LanguageContextProvider";
 
 export default function PresentationSection() {
-  const { theme } = useTheme();
+  const { language } = useLanguage();
+
   return (
-    <section class={`presentation-section presentation-section--${theme()}`}>
-      <TerminalLine />
+    <CustomSection title="Who am I" customClass="presentation-section">
+      <div class="fade">
+        <NameTitle title="gustavo_monnerat" />
 
-      <NameTitle title="gustavo_monnerat" />
+        <Subtitles
+          enSubtitle1={presentationTranslations.en.subtitle1}
+          enSubtitle2={presentationTranslations.en.subtitle2}
+          ptSubtitle1={presentationTranslations.pt.subtitle1}
+          ptSubtitle2={presentationTranslations.pt.subtitle2}
+        />
 
-      <Subtitles
-        enSubtitle1={presentationTranslations.en.subtitle1}
-        enSubtitle2={presentationTranslations.en.subtitle2}
-        ptSubtitle1={presentationTranslations.pt.subtitle1}
-        ptSubtitle2={presentationTranslations.pt.subtitle2}
-      />
+        <MiniAbout />
 
-      <MiniAbout />
+        <SocialLinks />
 
-      <ContactsSection
-        enContact={presentationTranslations.en.contact}
-        enDownload={presentationTranslations.en.download}
-        ptContact={presentationTranslations.pt.contact}
-        ptDownload={presentationTranslations.pt.download}
-      />
-    </section>
+        <NavigationButton>
+          {language() === "pt"
+            ? presentationTranslations.pt.contact
+            : presentationTranslations.en.contact}
+        </NavigationButton>
+      </div>
+    </CustomSection>
   );
 }
