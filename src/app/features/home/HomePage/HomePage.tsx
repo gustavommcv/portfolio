@@ -1,6 +1,7 @@
 import "./HomePage.scss";
 import PresentationSection from "../components/PresentationSection/PresentationSection";
 import ServicesSection from "../components/ServicesSection/ServicesSection";
+import TechStack from "../components/TechStack/TechStack";
 
 export default function HomePage() {
   return (
@@ -8,6 +9,8 @@ export default function HomePage() {
       <PresentationSection />
 
       <ServicesSection />
+
+      <TechStack />
     </div>
   );
 }
