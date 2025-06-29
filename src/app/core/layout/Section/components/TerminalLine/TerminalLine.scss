@@ -24,7 +24,9 @@
 }
 
 .command {
-  color: #19cb00;
+  &--error {
+    color: red;
+  }
 
   &--light {
     color: var(--accepted-command-color-light);

@@ -7,6 +7,8 @@ import App from "./app/App";
 import "./styles.scss";
 
 const root = document.getElementById("root");
+// TODO
+// Sound effects
 
 render(
   () => (

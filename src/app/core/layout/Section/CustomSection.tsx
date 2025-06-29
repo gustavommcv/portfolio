@@ -11,6 +11,7 @@ export default function CustomSection(props: {
   short?: boolean;
   fade?: boolean;
   typingAnimation?: boolean;
+  error?: boolean;
 }) {
   const { theme } = useTheme();
 
@@ -37,6 +38,7 @@ export default function CustomSection(props: {
             prompt={prompt}
             path={path}
             animated={props.typingAnimation}
+            error={props.error}
           />
         ) : (
           <TerminalLine
@@ -44,6 +46,7 @@ export default function CustomSection(props: {
             path="~"
             prompt={prompt}
             animated={props.typingAnimation}
+            error={props.error}
           />
         )}
 

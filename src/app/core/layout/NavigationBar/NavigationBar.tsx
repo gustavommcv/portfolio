@@ -113,6 +113,15 @@ export default function NavigationBar() {
             >
               About
             </A>
+
+            <A
+              activeClass={`navigation-bar__link--active navigation-bar__link--active--${theme()}`}
+              inactiveClass="navigation-bar__link"
+              href="/projects"
+              onClick={toggleMenu}
+            >
+              projects
+            </A>
           </div>
 
           <div class="navigation-bar__settings">

@@ -8,6 +8,7 @@ interface TerminalLineProps {
   prompt?: string;
   command?: string;
   animated?: boolean;
+  error?: boolean;
 }
 
 export default function TerminalLine(props: TerminalLineProps) {
@@ -35,7 +36,11 @@ export default function TerminalLine(props: TerminalLineProps) {
         {path && <span class="path">{path}</span>}
         <span class="prompt">{prompt}</span>
       </div>
-      <span class={`command command--${theme()}`}>{command}</span>
+      <span
+        class={`command ${props.error === true ? "command--error" : `command--${theme()}`}`}
+      >
+        {command}
+      </span>
     </div>
   );
 }

@@ -61,7 +61,7 @@ export default function EducationSection() {
             </>
           )}
         </For>
-      </div>{" "}
+      </div>
     </CustomSection>
   );
 }

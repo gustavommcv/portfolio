@@ -22,6 +22,12 @@ function App() {
         path="/about"
         component={lazy(() => import("./features/about/AboutPage/AboutPage"))}
       />
+      <Route
+        path="/projects"
+        component={lazy(
+          () => import("./features/projects/ProjectsPage/ProjectsPage"),
+        )}
+      />
     </HashRouter>
   );
 }
