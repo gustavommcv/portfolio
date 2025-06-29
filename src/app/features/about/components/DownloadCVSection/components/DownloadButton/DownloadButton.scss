@@ -1,19 +1,29 @@
-.navigation-button {
+.download-button {
   border: none;
-  padding: 1rem 3rem;
   font-size: 2.5rem;
-  border-radius: 5px;
   cursor: pointer;
-  display: block;
-  margin-left: auto;
+  display: inline-block;
   letter-spacing: 1px;
+  margin-bottom: 1.5rem;
 
-  &--light {
+  &__link {
+    display: inline-block;
+    width: 22rem;
+    padding: 1rem 3rem;
+    border-radius: 5px;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__link--light {
     background-color: transparent;
     color: var(--external-link-color-light);
   }
 
-  &--dark {
+  &__link--dark {
     background-color: #2d2d2d;
     color: var(--subtitle-color-dark);
   }
@@ -24,5 +34,9 @@
 
   @media screen and (max-width: 600px) {
     font-size: 2rem;
+
+    &__link {
+      width: 19rem;
+    }
   }
 }

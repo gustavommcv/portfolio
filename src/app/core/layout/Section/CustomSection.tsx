@@ -41,6 +41,7 @@ export default function CustomSection(props: {
         ) : (
           <TerminalLine
             command={props.command || "whoami"}
+            path="~"
             prompt={prompt}
             animated={props.typingAnimation}
           />

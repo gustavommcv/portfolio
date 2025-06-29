@@ -1,5 +1,6 @@
 import Footer from "../../../core/layout/Footer/Footer";
 import AboutSection from "../components/AboutSection/AboutSection";
+import DownloadCVSection from "../components/DownloadCVSection/DownloadCVSection";
 import InterestsSection from "../components/InterestsSection/InterestsSection";
 import LanguageSection from "../components/LanguageSection/LanguageSection";
 
@@ -13,6 +14,8 @@ export default function AboutPage() {
       <InterestsSection />
 
       <LanguageSection />
+
+      <DownloadCVSection />
 
       <Footer />
     </div>

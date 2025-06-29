@@ -1,0 +1,38 @@
+.buttons-container {
+  display: flex;
+  gap: 2rem;
+  overflow-x: auto;
+  padding-bottom: 4rem;
+
+  &::-webkit-scrollbar {
+    height: 0.5rem;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbar-thumb);
+    border-radius: 1rem;
+  }
+}
+
+.download-cv {
+  &__title {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+
+    &--light {
+      color: var(--normal-text-color-light);
+    }
+
+    &--dark {
+      color: var(--normal-text-color-dark);
+    }
+  }
+
+  &__button {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: var(--section-border);
+  }
+}
