@@ -15,7 +15,7 @@ export default function FeaturedProjectsSection() {
     <CustomSection
       title={t().title}
       customClass="featured-projects-section"
-      command="./featured-projects.sh"
+      command="/featured-projects.sh"
       short={true}
       fade={true}
     >

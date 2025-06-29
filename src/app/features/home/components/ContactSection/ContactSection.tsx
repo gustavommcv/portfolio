@@ -16,7 +16,7 @@ export default function ContactSection() {
     <CustomSection
       title={t().title}
       customClass="contact-section"
-      command="./contact.sh"
+      command="/contact.sh"
       short={true}
       fade={true}
     >

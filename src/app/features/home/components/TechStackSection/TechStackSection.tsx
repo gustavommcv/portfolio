@@ -10,7 +10,7 @@ export default function TechStackSection() {
     <CustomSection
       title="Tech Stack"
       customClass="tech-stack-section"
-      command="./tech-stack.sh"
+      command="/tech-stack.sh"
       short={true}
       fade={true}
     >

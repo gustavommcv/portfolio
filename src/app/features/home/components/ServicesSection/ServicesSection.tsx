@@ -16,7 +16,7 @@ export default function ServicesSection() {
     <CustomSection
       title={t().title}
       customClass="services-section"
-      command="./services.sh"
+      command="/services.sh"
       short={true}
       fade={true}
     >
