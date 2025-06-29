@@ -1,0 +1,60 @@
+.education-container {
+  overflow-y: auto;
+  max-height: 20rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  @media screen and (max-width: 600px) {
+    gap: 1rem;
+  }
+
+  &__title {
+    font-size: 2.5rem;
+
+    @media screen and (max-width: 600px) {
+      font-size: 2.2rem;
+    }
+
+    &--light {
+      color: var(--subtitle-color-light);
+    }
+
+    &--dark {
+      color: var(--subtitle-color-dark);
+    }
+  }
+
+  &__info {
+    &--light {
+      color: var(--normal-text-color-light);
+    }
+
+    &--dark {
+      color: var(--normal-text-color-dark);
+    }
+  }
+
+  &__item {
+    font-size: 2rem;
+
+    @media screen and (max-width: 600px) {
+      font-size: 1.8rem;
+    }
+  }
+
+  &__split {
+    font-size: 2.5rem;
+    text-align: center;
+    max-width: 45rem;
+
+    &--light {
+      color: var(--normal-text-color-light);
+    }
+
+    &--dark {
+      color: var(--normal-text-color-dark);
+    }
+  }
+}
