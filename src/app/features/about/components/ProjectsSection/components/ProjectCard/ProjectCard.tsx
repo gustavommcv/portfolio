@@ -17,21 +17,21 @@ export default function ProjectCard({
   const { theme } = useTheme();
 
   return (
-    <div class={`project-card project-card--${theme()}`}>
-      <div class="project-card__cover">
+    <div class={`project-card-old project-card-old--${theme()}`}>
+      <div class="project-card-old__cover">
         <img src={image} />
       </div>
 
-      <div class="project-card__body">
-        <h3 class="project-card__title">{title}</h3>
-        <p class="project-card__description">{description}</p>
+      <div class="project-card-old__body">
+        <h3 class="project-card-old__title">{title}</h3>
+        <p class="project-card-old__description">{description}</p>
 
         {link && (
           <a
             href={link}
             target="_blank"
             rel="noopener noreferrer"
-            class="project-card__link"
+            class="project-card-old__link"
           >
             View on GitHub
           </a>
