@@ -3,9 +3,9 @@ import CustomList from "../../../../core/shared/CustomList/CustomList";
 import gopherSmallImage from "../../../../../assets/images/gopher-s.webp";
 import gopherLargeImage from "../../../../../assets/images/gopher-l.webp";
 
-import "./TechStack.scss";
+import "./TechStackSection.scss";
 
-export default function TechStack() {
+export default function TechStackSection() {
   return (
     <CustomSection
       title="Tech Stack"

@@ -1,9 +1,10 @@
 import "./HomePage.scss";
 import PresentationSection from "../components/PresentationSection/PresentationSection";
 import ServicesSection from "../components/ServicesSection/ServicesSection";
-import TechStack from "../components/TechStack/TechStack";
 import ContactSection from "../components/ContactSection/ContactSection";
 import Footer from "../../../core/layout/Footer/Footer";
+import TechStackSection from "../components/TechStackSection/TechStackSection";
+import FeaturedProjectsSection from "../components/FeaturedProjectsSection/FeaturedProjectsSection";
 
 export default function HomePage() {
   return (
@@ -12,7 +13,9 @@ export default function HomePage() {
 
       <ServicesSection />
 
-      <TechStack />
+      <TechStackSection />
+
+      <FeaturedProjectsSection />
 
       <ContactSection />
 
