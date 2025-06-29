@@ -7,6 +7,7 @@ interface TerminalLineProps {
   path?: string;
   prompt?: string;
   command?: string;
+  animated?: boolean;
 }
 
 export default function TerminalLine(props: TerminalLineProps) {
@@ -19,7 +20,11 @@ export default function TerminalLine(props: TerminalLineProps) {
   const { theme } = useTheme();
 
   return (
-    <div class={`terminal-line terminal-line--${theme()}`}>
+    <div
+      class={`terminal-line terminal-line--${theme()} ${
+        props.animated ? `typing-animation typing-animation--${theme()}` : ""
+      }`}
+    >
       {username && (
         <span class="user-host">
           {username}

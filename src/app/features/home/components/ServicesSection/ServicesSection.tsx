@@ -15,9 +15,10 @@ export default function ServicesSection() {
   return (
     <CustomSection
       title={t().title}
-      customClass="services-section fade"
+      customClass="services-section"
       command="./services.sh"
       short={true}
+      fade={true}
     >
       <CustomList title={t().listTitle}>
         <For each={t().items}>{(item) => <li>{item}</li>}</For>

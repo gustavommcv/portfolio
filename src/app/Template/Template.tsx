@@ -3,7 +3,7 @@ import { useTheme } from "../features/contexts/ThemeContext/ThemeContextProvider
 import NavigationBar from "../core/layout/NavigationBar/NavigationBar";
 
 import "./Template.scss";
-import Footer from "../core/layout/Footer/Footer";
+// import Footer from "../core/layout/Footer/Footer";
 
 const Template: ParentComponent = (props) => {
   const { theme } = useTheme();
@@ -16,7 +16,7 @@ const Template: ParentComponent = (props) => {
 
       <div class="page-layout__children">{props.children}</div>
 
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };

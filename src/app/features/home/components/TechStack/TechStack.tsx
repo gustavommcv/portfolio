@@ -9,9 +9,10 @@ export default function TechStack() {
   return (
     <CustomSection
       title="Tech Stack"
-      customClass="tech-stack-section fade"
+      customClass="tech-stack-section"
       command="./tech-stack.sh"
       short={true}
+      fade={true}
     >
       <CustomList title="Tech Stack">
         <li>Golang/gin</li>

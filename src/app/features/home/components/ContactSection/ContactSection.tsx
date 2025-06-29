@@ -15,9 +15,10 @@ export default function ContactSection() {
   return (
     <CustomSection
       title={t().title}
-      customClass="contact-section fade"
+      customClass="contact-section"
       command="./contact.sh"
       short={true}
+      fade={true}
     >
       <div
         class={`contact-section__warning contact-section__warning--${theme()}`}

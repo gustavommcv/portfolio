@@ -3,6 +3,7 @@ import PresentationSection from "../components/PresentationSection/PresentationS
 import ServicesSection from "../components/ServicesSection/ServicesSection";
 import TechStack from "../components/TechStack/TechStack";
 import ContactSection from "../components/ContactSection/ContactSection";
+import Footer from "../../../core/layout/Footer/Footer";
 
 export default function HomePage() {
   return (
@@ -14,6 +15,8 @@ export default function HomePage() {
       <TechStack />
 
       <ContactSection />
+
+      <Footer />
     </div>
   );
 }

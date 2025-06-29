@@ -15,7 +15,7 @@ export default function PresentationSection() {
   const { language } = useLanguage();
 
   return (
-    <CustomSection title="Who am I" customClass="presentation-section">
+    <CustomSection title="Who am I" customClass="presentation-section" typingAnimation={true}>
       <div class="fade">
         <NameTitle title="gustavo_monnerat" />
 

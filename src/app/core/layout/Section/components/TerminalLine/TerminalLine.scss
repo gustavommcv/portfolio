@@ -8,12 +8,6 @@
 
   font-size: 3rem;
 
-  /* cursor */
-  border-right: 10px solid white;
-  animation:
-    typing 2s steps(25),
-    blink 0.5s step-end infinite alternate;
-
   @media screen and (max-width: 600px) {
     font-size: 2rem;
     margin-bottom: 2rem;
@@ -22,7 +16,6 @@
 
   &--light {
     color: var(--normal-text-color-light);
-    border-right: 10px solid gray;
   }
 
   &--dark {
@@ -39,6 +32,21 @@
 
   &--dark {
     color: var(--accepted-command-color-dark);
+  }
+}
+
+.typing-animation {
+  animation:
+    typing 2s steps(25),
+    blink 0.5s step-end infinite alternate;
+
+  /* cursor */
+  &--light {
+    border-right: 10px solid gray;
+  }
+
+  &--dark {
+    border-right: 10px solid white;
   }
 }
 

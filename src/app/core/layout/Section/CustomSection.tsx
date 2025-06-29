@@ -9,6 +9,8 @@ export default function CustomSection(props: {
   customClass: string;
   command?: string;
   short?: boolean;
+  fade?: boolean;
+  typingAnimation?: boolean;
 }) {
   const { theme } = useTheme();
 
@@ -20,12 +22,12 @@ export default function CustomSection(props: {
   return (
     <>
       <h2
-        class={`custom-section__title custom-section__title--${theme()} ${props.customClass}`}
+        class={`custom-section__title custom-section__title--${theme()} ${props.customClass} ${props.fade === true ? "fade" : ""}`}
       >
         # {props.title}
       </h2>
       <section
-        class={`custom-section custom-section--${theme()} ${props.customClass} `}
+        class={`custom-section custom-section--${theme()} ${props.customClass} ${props.fade === true ? "fade" : ""}`}
       >
         {!props.short ? (
           <TerminalLine
@@ -34,9 +36,14 @@ export default function CustomSection(props: {
             hostname={hostname}
             prompt={prompt}
             path={path}
+            animated={props.typingAnimation}
           />
         ) : (
-          <TerminalLine command={props.command || "whoami"} prompt={prompt} />
+          <TerminalLine
+            command={props.command || "whoami"}
+            prompt={prompt}
+            animated={props.typingAnimation}
+          />
         )}
 
         {props.children}

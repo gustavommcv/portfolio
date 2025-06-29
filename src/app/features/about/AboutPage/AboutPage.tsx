@@ -1,3 +1,4 @@
+import Footer from "../../../core/layout/Footer/Footer";
 import { useTheme } from "../../contexts/ThemeContext/ThemeContextProvider";
 import AboutSection from "../components/AboutSection/AboutSection";
 import ProjectsSection from "../components/ProjectsSection/ProjectsSection";
@@ -10,7 +11,10 @@ export default function AboutPage() {
   return (
     <div class={`about-page about-page--${theme()}`}>
       <AboutSection />
+
       <ProjectsSection />
+
+      <Footer />
     </div>
   );
 }
