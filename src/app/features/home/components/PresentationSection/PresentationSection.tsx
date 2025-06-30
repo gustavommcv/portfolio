@@ -30,7 +30,7 @@ export default function PresentationSection() {
 
         <SocialLinks />
 
-        <NavigationButton>
+        <NavigationButton link="contact">
           {language() === "pt"
             ? presentationTranslations.pt.contact
             : presentationTranslations.en.contact}

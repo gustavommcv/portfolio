@@ -26,7 +26,7 @@ export default function FeaturedProjectsSection() {
         {t().warning}
       </div>
       <FeaturedProjectsContainer />
-      <NavigationButton>{t().link}</NavigationButton>
+      <NavigationButton link="projects">{t().link}</NavigationButton>
     </CustomSection>
   );
 }

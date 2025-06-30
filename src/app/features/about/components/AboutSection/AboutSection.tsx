@@ -55,7 +55,7 @@ export default function AboutSection() {
           <div
             class={`about-section__additional-info about-section__additional-info--${theme()}`}
           >
-            <p>Curitiba - PR - {t().country}</p>
+            <p>Curitiba/PR - {t().country}</p>
             <p>
               {age()}y - {t().pronouns}
             </p>

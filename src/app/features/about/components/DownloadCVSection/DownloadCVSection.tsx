@@ -23,7 +23,8 @@ export default function DownloadCVSection() {
       <div
         class={`contact-section__warning contact-section__warning--${theme()}`}
       >
-        {t().warning} {language() === "pt" ? "{pt-br}*" : "{en-us}*"}
+        {t().warning}
+        {language() === "pt" ? '{"lang": "pt-br"}*' : '{"lang": "en-us"}*'}
       </div>
 
       <div class="buttons-container">

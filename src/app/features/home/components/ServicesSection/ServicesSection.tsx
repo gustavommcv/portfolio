@@ -24,7 +24,7 @@ export default function ServicesSection() {
         <For each={t().items}>{(item) => <li>{item}</li>}</For>
       </CustomList>
 
-      <NavigationButton>{t().button}</NavigationButton>
+      <NavigationButton link="projects">{t().button}</NavigationButton>
     </CustomSection>
   );
 }

@@ -15,8 +15,8 @@ export default function CustomSection(props: {
 }) {
   const { theme } = useTheme();
 
-  const username = "[gustavo@";
-  const hostname = "archlinux";
+  const username = "[guga@";
+  const hostname = "arch";
   const path = "~]";
   const prompt = "$";
 

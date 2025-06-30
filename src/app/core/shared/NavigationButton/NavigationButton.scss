@@ -5,8 +5,9 @@
   border-radius: 5px;
   cursor: pointer;
   display: block;
+  width: fit-content;
   margin-left: auto;
-  letter-spacing: 1px;
+  text-decoration: none;
 
   &--light {
     background-color: transparent;
