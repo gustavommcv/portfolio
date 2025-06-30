@@ -37,6 +37,8 @@
   gap: 1rem;
 
   text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
 
   &--light {
     color: var(--normal-text-color-light);
@@ -45,10 +47,6 @@
   &--dark {
     color: var(--normal-text-color-dark);
   }
-
-  transition: transform 0.2s ease,
-  box-shadow 0.2s ease;
-  cursor: pointer;
 
   &:hover {
     transform: translateY(-4px);
