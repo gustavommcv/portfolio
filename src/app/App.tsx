@@ -3,6 +3,7 @@ import { createEffect, lazy, onMount } from "solid-js";
 import Template from "./Template/Template";
 import HomePage from "./features/home/HomePage/HomePage";
 import { useTheme } from "./features/contexts/ThemeContext/ThemeContextProvider";
+import ErrorPage from "./core/shared/ErrorPage/ErrorPage";
 
 function App() {
   const { theme } = useTheme();
@@ -22,12 +23,13 @@ function App() {
         path="/about"
         component={lazy(() => import("./features/about/AboutPage/AboutPage"))}
       />
-      <Route
-        path="/projects"
-        component={lazy(
-          () => import("./features/projects/ProjectsPage/ProjectsPage"),
-        )}
-      />
+      {/* <Route */}
+      {/*   path="/projects" */}
+      {/*   component={lazy( */}
+      {/*     () => import("./features/projects/ProjectsPage/ProjectsPage"), */}
+      {/*   )} */}
+      {/* /> */}
+      <Route path="*" component={ErrorPage} />
     </HashRouter>
   );
 }
