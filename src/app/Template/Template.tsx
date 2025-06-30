@@ -5,8 +5,6 @@ import NavigationBar from "../core/layout/NavigationBar/NavigationBar";
 import "./Template.scss";
 // import Footer from "../core/layout/Footer/Footer";
 
-// TODO
-// Not found page
 const Template: ParentComponent = (props) => {
   const { theme } = useTheme();
 

@@ -6,6 +6,8 @@ export default function FeaturedProjectsContainer() {
   const projects = useFeaturedProjects();
   const { theme } = useTheme();
 
+  // TODO
+  // Single project page instead of just sending the user to the github repo
   return (
     <div class="projects-container">
       {projects().map((project) => (

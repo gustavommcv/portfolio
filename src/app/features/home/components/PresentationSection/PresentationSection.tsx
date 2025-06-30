@@ -10,7 +10,7 @@ import NavigationButton from "../../../../core/shared/NavigationButton/Navigatio
 import { useLanguage } from "../../../contexts/LanguageContext/LanguageContextProvider";
 
 // TODO
-// dinamic language
+// dynamic language
 export default function PresentationSection() {
   const { language } = useLanguage();
 
