@@ -184,18 +184,21 @@
   .hamburger {
     display: none;
     background: none;
-    border: none;
     position: relative;
     cursor: pointer;
     padding: 1rem;
     z-index: 10;
 
+    border-radius: 8px;
+
     &--light {
       background-color: var(--section-background-color-light);
+      border: var(--section-border);
     }
 
     &--dark {
       background-color: var(--section-background-color-dark);
+      border: var(--section-border);
     }
 
     @include respond-to("mobile") {

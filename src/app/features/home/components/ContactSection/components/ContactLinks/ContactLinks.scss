@@ -2,6 +2,18 @@
   font-size: 2.5rem;
   margin-left: 4rem;
   margin-bottom: 4rem;
+  overflow-wrap: break-word;
+  word-break: break-word;
+
+  &__span {
+    &--light {
+      color: var(--normal-text-color-light);
+    }
+
+    &--dark {
+      color: var(--normal-text-color-dark);
+    }
+  }
 
   &--light {
     color: var(--external-link-color-light);
