@@ -1,9 +1,9 @@
-import { useLanguage } from "../../../contexts/LanguageContext/LanguageContextProvider";
-import { useTheme } from "../../../contexts/ThemeContext/ThemeContextProvider";
 import { useProjects } from "./useProjects";
 import ProjectCard from "./components/ProjectCard/ProjectCard";
 
 import "./ProjectsSection.scss";
+import { useLanguage } from "../../features/contexts/LanguageContext/LanguageContextProvider";
+import { useTheme } from "../../features/contexts/ThemeContext/ThemeContextProvider";
 
 export default function ProjectsSection() {
   const { language } = useLanguage();
