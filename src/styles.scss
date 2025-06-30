@@ -98,6 +98,8 @@ html {
   font-family: var(--font-family);
   font-weight: var(--font-weight-normal);
   line-height: var(--line-height);
+
+  scroll-behavior: smooth;
 }
 
 body {

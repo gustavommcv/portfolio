@@ -15,7 +15,11 @@ export default function PresentationSection() {
   const { language } = useLanguage();
 
   return (
-    <CustomSection title="Who am I" customClass="presentation-section" typingAnimation={true}>
+    <CustomSection
+      title="Who am I"
+      customClass="presentation-section"
+      typingAnimation={true}
+    >
       <div class="fade">
         <NameTitle title="gustavo_monnerat" />
 
@@ -30,7 +34,7 @@ export default function PresentationSection() {
 
         <SocialLinks />
 
-        <NavigationButton link="contact">
+        <NavigationButton link="#contact">
           {language() === "pt"
             ? presentationTranslations.pt.contact
             : presentationTranslations.en.contact}

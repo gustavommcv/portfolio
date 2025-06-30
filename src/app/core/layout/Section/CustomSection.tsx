@@ -12,6 +12,7 @@ export default function CustomSection(props: {
   fade?: boolean;
   typingAnimation?: boolean;
   error?: boolean;
+  id?: string;
 }) {
   const { theme } = useTheme();
 
@@ -28,6 +29,7 @@ export default function CustomSection(props: {
         # {props.title}
       </h2>
       <section
+        id={props.id}
         class={`custom-section custom-section--${theme()} ${props.customClass} ${props.fade === true ? "fade" : ""}`}
       >
         {!props.short ? (

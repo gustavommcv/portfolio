@@ -15,6 +15,7 @@ export default function ContactSection() {
   return (
     <CustomSection
       title={t().title}
+      id="contact"
       customClass="contact-section"
       command="/contact.sh"
       short={true}
