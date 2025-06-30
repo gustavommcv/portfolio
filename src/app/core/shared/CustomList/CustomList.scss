@@ -25,6 +25,11 @@
     &--dark {
       color: var(--normal-text-color-dark);
     }
+
+    & li {
+      overflow-wrap: break-word;
+      word-break: break-word;
+    }
   }
 
   @media screen and (max-width: 600px) {
