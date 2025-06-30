@@ -8,6 +8,8 @@ import LanguageButton from "./components/LanguageButton/LanguageButton";
 
 import "./NavigationBar.scss";
 
+// TODO
+// Sticky desktop header
 export default function NavigationBar() {
   const { theme } = useTheme();
   const location = useLocation();
