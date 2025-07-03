@@ -4,7 +4,7 @@ import { LanguageProvider } from "./app/features/contexts/LanguageContext/Langua
 import { ThemeProvider } from "./app/features/contexts/ThemeContext/ThemeContextProvider";
 import App from "./app/App";
 
-import "./styles.scss";
+import "./styles/styles.scss";
 
 const root = document.getElementById("root");
 // TODO
