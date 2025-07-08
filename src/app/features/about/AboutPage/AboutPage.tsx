@@ -1,3 +1,4 @@
+import { Title } from "@solidjs/meta";
 import Footer from "../../../core/layout/Footer/Footer";
 import AboutSection from "../components/AboutSection/AboutSection";
 import DownloadCVSection from "../components/DownloadCVSection/DownloadCVSection";
@@ -9,18 +10,22 @@ import "./AboutPage.scss";
 
 export default function AboutPage() {
   return (
-    <div class={`about-page`}>
-      <AboutSection />
+    <>
+      <Title>gus::monnerat - Full Stack Developer - About Page</Title>
 
-      <EducationSection />
+      <div class={`about-page`}>
+        <AboutSection />
 
-      <InterestsSection />
+        <EducationSection />
 
-      <LanguageSection />
+        <InterestsSection />
 
-      <DownloadCVSection />
+        <LanguageSection />
 
-      <Footer />
-    </div>
+        <DownloadCVSection />
+
+        <Footer />
+      </div>
+    </>
   );
 }

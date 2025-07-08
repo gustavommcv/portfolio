@@ -5,21 +5,26 @@ import ContactSection from "../components/ContactSection/ContactSection";
 import Footer from "../../../core/layout/Footer/Footer";
 import TechStackSection from "../components/TechStackSection/TechStackSection";
 import FeaturedProjectsSection from "../components/FeaturedProjectsSection/FeaturedProjectsSection";
+import { Title } from "@solidjs/meta";
 
 export default function HomePage() {
   return (
-    <div class="home-page">
-      <PresentationSection />
+    <>
+      <Title>gus::monnerat - Full Stack Developer - Home Page</Title>
 
-      <ServicesSection />
+      <div class="home-page">
+        <PresentationSection />
 
-      <TechStackSection />
+        <ServicesSection />
 
-      <FeaturedProjectsSection />
+        <TechStackSection />
 
-      <ContactSection />
+        <FeaturedProjectsSection />
 
-      <Footer />
-    </div>
+        <ContactSection />
+
+        <Footer />
+      </div>
+    </>
   );
 }

@@ -5,6 +5,7 @@ import { ThemeProvider } from "./app/features/contexts/ThemeContext/ThemeContext
 import App from "./app/App";
 
 import "./styles/styles.scss";
+import { MetaProvider } from "@solidjs/meta";
 
 const root = document.getElementById("root");
 // TODO
@@ -12,11 +13,13 @@ const root = document.getElementById("root");
 
 render(
   () => (
-    <LanguageProvider>
-      <ThemeProvider>
-        <App />
-      </ThemeProvider>
-    </LanguageProvider>
+    <MetaProvider>
+      <LanguageProvider>
+        <ThemeProvider>
+          <App />
+        </ThemeProvider>
+      </LanguageProvider>
+    </MetaProvider>
   ),
   root!,
 );
