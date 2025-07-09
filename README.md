@@ -12,3 +12,7 @@
 - **Side Gopher**:  
   Artwork by [Takuya Ueda (@tenntenn)](https://twitter.com/tenntenn).  
   Licensed under [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/).
+
+## Author
+- **Developed by [Gustavo Monnerat da Costa Veronese](https://www.linkedin.com/in/gustavommcv/)**  
+- **Contact me at:** monnerat.gustavo@outlook.com
