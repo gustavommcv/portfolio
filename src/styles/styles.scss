@@ -90,6 +90,18 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+  &::selection {
+    color: black;
+    background: #fffacd;
+    text-shadow: none;
+  }
+
+  &::-moz-selection {
+    color: black;
+    background: #fffacd;
+    text-shadow: none;
+  }
 }
 
 html {
