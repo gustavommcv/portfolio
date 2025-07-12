@@ -4,9 +4,15 @@ import gomodoroGif from "../../../../assets/gifs/projects/gomodoro.gif";
 
 import "./Gomodoro.scss";
 import { useTheme } from "../../contexts/ThemeContext/ThemeContextProvider";
+import { useLanguage } from "../../contexts/LanguageContext/LanguageContextProvider";
+import gomodoroProjectsTranslations from "./gomodoroTranslations";
 
 export default function Gomodoro() {
   const { theme } = useTheme();
+
+  const { language } = useLanguage();
+
+  const t = () => gomodoroProjectsTranslations[language()];
 
   return (
     <>
@@ -17,7 +23,7 @@ export default function Gomodoro() {
           title="Gomodoro"
           id="gomodoro"
           customClass="gomodoro-section"
-          command="/gomodoro.go"
+          command="gomodoro"
           short={true}
           fade={false}
         >
@@ -27,12 +33,7 @@ export default function Gomodoro() {
             <div class="gomodoro-page__description">
               <h2 class={`${theme()}`}>Gomodoro</h2>
 
-              <p class={`${theme()}`}>
-                Gomodoro é uma ferramenta CLI (Command Line Interface)
-                minimalista e eficiente para implementar a técnica Pomodoro
-                diretamente no seu terminal. Desenvolvido em Go (se ainda nao
-                ficou claro).
-              </p>
+              <p class={`${theme()}`}>{t().description}</p>
             </div>
           </div>
         </CustomSection>
