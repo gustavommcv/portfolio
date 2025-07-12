@@ -1,6 +1,6 @@
 import { Title } from "@solidjs/meta";
 import CustomSection from "../../../core/layout/Section/CustomSection";
-import gomodoroGif from "../../../../assets/images/projects/gomodoro.webp";
+import gomodoroGif from "../../../../assets/gifs/projects/gomodoro.gif";
 
 import "./Gomodoro.scss";
 import { useTheme } from "../../contexts/ThemeContext/ThemeContextProvider";
