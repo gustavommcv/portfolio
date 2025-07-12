@@ -54,6 +54,7 @@
 
     & p {
       font-size: 2rem;
+      margin-bottom: 2rem;
 
       @media screen and (max-width: 1368px) {
         font-size: 1.8rem;
@@ -93,6 +94,25 @@
 
     @media screen and (max-width: 450px) {
       max-width: 30rem;
+    }
+  }
+
+  &__link {
+    font-size: 2.5rem;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    margin-left: 1rem;
+
+    &--light {
+      color: var(--external-link-color-light);
+    }
+
+    &--dark {
+      color: var(--external-link-color-dark);
+    }
+
+    &:hover {
+      text-decoration: underline wavy;
     }
   }
 }

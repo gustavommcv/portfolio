@@ -34,6 +34,14 @@ export default function Gomodoro() {
               <h2 class={`${theme()}`}>Gomodoro</h2>
 
               <p class={`${theme()}`}>{t().description}</p>
+
+              <a
+                class={`gomodoro-page__link gomodoro-page__link--${theme()}`}
+                target="_blank"
+                href="https://github.com/gustavommcv/gomodoro"
+              >
+                Repository
+              </a>
             </div>
           </div>
         </CustomSection>
