@@ -18,7 +18,7 @@ export default function DownloadCVSection() {
       customClass="download-cv-section"
       command="/cv.sh"
       short={true}
-      fade={true}
+      fade={false}
     >
       <div
         class={`contact-section__warning contact-section__warning--${theme()}`}

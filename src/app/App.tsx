@@ -16,19 +16,35 @@ function App() {
     document.body.className = theme();
   });
 
+  const projects = [
+    {
+      id: "gomodoro",
+      component: lazy(() => import("./features/projects/Gomodoro/Gomodoro")),
+    },
+  ];
+
   return (
     <HashRouter root={Template}>
       <Route path="/" component={HomePage} />
+
       <Route
         path="/about"
         component={lazy(() => import("./features/about/AboutPage/AboutPage"))}
       />
+
       {/* <Route */}
       {/*   path="/projects" */}
       {/*   component={lazy( */}
       {/*     () => import("./features/projects/ProjectsPage/ProjectsPage"), */}
       {/*   )} */}
       {/* /> */}
+
+      <Route path="/projects">
+        {projects.map((project) => (
+          <Route path={`/${project.id}`} component={project.component} />
+        ))}
+      </Route>
+
       <Route path="*" component={ErrorPage} />
     </HashRouter>
   );

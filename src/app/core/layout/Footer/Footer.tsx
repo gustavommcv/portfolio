@@ -1,11 +1,14 @@
 import { useTheme } from "../../../features/contexts/ThemeContext/ThemeContextProvider";
 import "./Footer.scss";
 
-export default function Footer() {
+export default function Footer(props: { fade?: boolean }) {
   const { theme } = useTheme();
 
   return (
-    <footer class={`footer footer--${theme()} fade`} role="contentinfo">
+    <footer
+      class={`footer footer--${theme()} ${props.fade ? "fade" : ""}`}
+      role="contentinfo"
+    >
       <div class="footer__content">
         <p class="footer__copyright">
           &copy; <span class="footer__year">2025</span> Made with{" "}

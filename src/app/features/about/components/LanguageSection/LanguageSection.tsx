@@ -15,7 +15,7 @@ export default function LanguageSection() {
       customClass="interests-section"
       command="/languages.sh"
       short={true}
-      fade={true}
+      fade={false}
     >
       <CustomList title={t().listTitle}>
         <For each={t().items}>{(item) => <li>{item}</li>}</For>

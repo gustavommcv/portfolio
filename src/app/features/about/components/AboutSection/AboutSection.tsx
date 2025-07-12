@@ -42,9 +42,9 @@ export default function AboutSection() {
       title={t().title}
       customClass="about-section"
       command="/me.sh"
-      typingAnimation={true}
+      fade={false}
     >
-      <div class="about-section__container fade">
+      <div class="about-section__container">
         <div class={`about-section__text about-section__text--${theme()}`}>
           <h1 class={`about-section__title about-section__title--${theme()}`}>
             "Hello, World!"

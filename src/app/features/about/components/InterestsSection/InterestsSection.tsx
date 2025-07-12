@@ -14,7 +14,7 @@ export default function InterestsSection() {
       customClass="interests-section"
       command="/interests.sh"
       short={true}
-      fade={true}
+      fade={false}
     >
       <CustomList title={t().listTitle}>
         <li>linux</li>

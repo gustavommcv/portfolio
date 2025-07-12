@@ -7,17 +7,21 @@ type Project = {
     en: string;
     pt: string;
   };
+
   description: {
     en: string;
     pt: string;
   };
+
   shortDescription: {
     en: string;
     pt: string;
   };
+
   image: string;
   technologies: string[];
   link?: string;
+  nav?: string;
 };
 
 const featuredProjects: Project[] = [
@@ -44,17 +48,21 @@ const featuredProjects: Project[] = [
       en: "Gomodoro",
       pt: "Gomodoro",
     },
+
     description: {
       en: "A lightning-fast CLI Pomodoro timer for developers, built in Go.",
       pt: "Um cronómetro CLI Pomodoro extremamente rápido para programadores, escrito em Go.",
     },
+
     shortDescription: {
       en: "A lightning-fast CLI Pomodoro timer for developers, built in Go.",
       pt: "Um cronómetro CLI Pomodoro extremamente rápido para programadores, escrito em Go.",
     },
+
     image: gomodoro,
     technologies: ["Go"],
     link: "https://github.com/gustavommcv/gomodoro",
+    nav: "/projects/gomodoro",
   },
 
   {

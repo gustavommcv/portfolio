@@ -23,7 +23,7 @@ export default function HomePage() {
 
         <ContactSection />
 
-        <Footer />
+        <Footer fade={true} />
       </div>
     </>
   );

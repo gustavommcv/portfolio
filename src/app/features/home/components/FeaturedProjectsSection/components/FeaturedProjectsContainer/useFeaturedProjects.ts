@@ -13,6 +13,7 @@ export function useFeaturedProjects() {
       image: p.image,
       technologies: p.technologies,
       link: p.link,
+      nav: p.nav,
     })),
   );
 }

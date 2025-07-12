@@ -18,7 +18,7 @@ export default function EducationSection() {
       customClass="education-section"
       command="/education.sh"
       short={true}
-      fade={true}
+      fade={false}
     >
       <div
         class={`contact-section__warning contact-section__warning--${theme()}`}
