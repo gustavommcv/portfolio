@@ -23,6 +23,8 @@ function App() {
     },
   ];
 
+  // TODO
+  // Scroll to top
   return (
     <HashRouter root={Template}>
       <Route path="/" component={HomePage} />
