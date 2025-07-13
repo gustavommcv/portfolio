@@ -1,8 +1,8 @@
 import { createMemo } from "solid-js";
-import rawProjects from "./featuredProjectsData";
-import { useLanguage } from "../../../../../contexts/LanguageContext/LanguageContextProvider";
+import rawProjects from "./ProjectsData";
+import { useLanguage } from "../../features/contexts/LanguageContext/LanguageContextProvider";
 
-export function useFeaturedProjects() {
+export function useProjects() {
   const { language } = useLanguage();
 
   return createMemo(() =>

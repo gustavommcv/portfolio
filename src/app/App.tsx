@@ -34,12 +34,12 @@ function App() {
         component={lazy(() => import("./features/about/AboutPage/AboutPage"))}
       />
 
-      {/* <Route */}
-      {/*   path="/projects" */}
-      {/*   component={lazy( */}
-      {/*     () => import("./features/projects/ProjectsPage/ProjectsPage"), */}
-      {/*   )} */}
-      {/* /> */}
+      <Route
+        path="/projects"
+        component={lazy(
+          () => import("./features/projects/ProjectsPage/ProjectsPage"),
+        )}
+      />
 
       <Route path="/projects">
         {projects.map((project) => (

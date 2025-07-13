@@ -8,7 +8,7 @@ export default function FeaturedProjectsContainer() {
   const { theme } = useTheme();
 
   return (
-    <div class="projects-container">
+    <div class="featured-projects-container">
       {projects().map((project) =>
         project.nav ? (
           <A

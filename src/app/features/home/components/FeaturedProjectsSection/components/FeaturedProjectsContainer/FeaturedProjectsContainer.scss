@@ -1,4 +1,4 @@
-.projects-container {
+.featured-projects-container {
   display: flex;
   gap: 2rem;
   padding-top: 1rem;
@@ -6,12 +6,6 @@
   margin-bottom: 2rem;
 
   overflow-x: auto;
-
-  // TODO
-  // Snap Scroll
-  // @media screen and (max-width: 767px) {
-  //   scroll-snap-type: both mandatory;
-  // }
 
   &::-webkit-scrollbar {
     height: 0.5rem;
@@ -23,6 +17,8 @@
   }
 }
 
+// TODO
+// Separated Component
 .project-card {
   min-width: 30rem;
   max-width: 40rem;
@@ -37,7 +33,9 @@
   gap: 1rem;
 
   text-decoration: none;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
   cursor: pointer;
 
   &--light {
@@ -75,6 +73,6 @@
   }
 
   &__description {
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
 }

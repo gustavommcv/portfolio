@@ -3,12 +3,10 @@ import { useTheme } from "../../../features/contexts/ThemeContext/ThemeContextPr
 import CustomSection from "../../layout/Section/CustomSection";
 import "./ErrorPage.scss";
 import { createMemo } from "solid-js";
-import { useLanguage } from "../../../features/contexts/LanguageContext/LanguageContextProvider";
 import { Title } from "@solidjs/meta";
 
 export default function ErrorPage() {
   const { theme } = useTheme();
-  const { language } = useLanguage();
   const location = useLocation();
 
   const currentPath = createMemo(() => location.pathname);
@@ -32,14 +30,6 @@ export default function ErrorPage() {
             <h3 class={"not-found__subtitle"}>
               bash: {currentPath()}: command not found
             </h3>
-
-            {location.pathname === "/projects" && (
-              <p class={"not-found__description"}>
-                {language() === "en"
-                  ? "Changing and adjusting projects page details. Feel free to have a coffee ☕ meanwhile!"
-                  : "Mudando e ajustando detalhes da página de projetos. Fique à vontade para tomar um café ☕ enquanto isso!"}
-              </p>
-            )}
           </div>
         </CustomSection>
       </div>

@@ -1,6 +1,6 @@
 import { Title } from "@solidjs/meta";
-import ProjectsSection from "../components/ProjectsSection/ProjectsSection";
 import "./ProjectsPage.scss";
+import ProjectsSection from "./components/ProjectsSection/ProjectsSection";
 
 export default function ProjectsPage() {
   return (
