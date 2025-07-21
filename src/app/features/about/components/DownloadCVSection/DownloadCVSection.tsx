@@ -34,12 +34,7 @@ export default function DownloadCVSection() {
           </h3>
           <DownloadButton fileExtension="docx" />
         </div>
-        <div class="download-cv__button">
-          <h3 class={`download-cv__title download-cv__title--${theme()}`}>
-            CV PDF
-          </h3>
-          <DownloadButton fileExtension="pdf" />
-        </div>
+
         <div class="download-cv__button">
           <h3 class={`download-cv__title download-cv__title--${theme()}`}>
             CV ODT
